@@ -1,0 +1,143 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #ffb8cd;
+        line-height: 1.7;
+        display: flex;
+        flex-direction: column;
+      }
+
+      ul {
+        list-style: none;
+        padding: 10px;
+      }
+
+      .H{
+        display: flex;
+        flex-direction: column;
+        margin: 100px;
+        align-items: center;
+      }
+
+      .content{
+        display: flex;
+        width: 1100px;
+        height: fit-content;
+        background-color: #ffffff;
+        border-radius: 25px;
+        box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
+        margin-bottom: 50px;
+      }
+
+      .content2{
+        display: flex;
+        width: 1100px;
+        height: 700px;
+        background-color: #ffffff;
+        border-radius: 25px;
+        box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
+        justify-content: center;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .header {
+        width: 1000px;
+        height: 50px;
+        color: #ff6694;
+      }
+
+      .item li{
+        margin: 25px;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+      }
+
+      .tagh1{
+        border-radius: 10px;
+        width: fit-content;
+        height: fit-content;
+        padding: 10px;
+        background-color: #1565c0;
+        color: white;
+      }
+
+      .tagh2{
+        border-radius: 10px;
+        width: fit-content;
+        height: fit-content;
+        padding: 10px;
+        background-color: #00897b;
+        color: white;
+      }
+
+      .tagh3{
+        border-radius: 10px;
+        width: fit-content;
+        height: fit-content;
+        padding: 10px;
+        background-color: #43a047;
+        color: white;
+      }
+
+      .tagh4{
+        border-radius: 10px;
+        width: fit-content;
+        height: fit-content;
+        padding: 10px;
+        background-color: #f9a825;
+        color: white;
+      }
+
+      .tagh5{
+        border-radius: 10px;
+        width: fit-content;
+        height: fit-content;
+        padding: 10px;
+        background-color: #e64a19;
+        color: white;
+      }
+
+      .tagh6{
+        border-radius: 10px;
+        width: fit-content;
+        height: fit-content;
+        padding: 10px;
+        background-color: #7e57c2;
+        color: white;
+      }
+
+      pre{
+        background: rgb(230, 230, 230);
+        border-radius: 25px;
+        border-left: #0b85fe 5px solid;
+        border: 5px;
+        width: 1000px;
+        border-left: #ff77e1 5px solid;
+      }
+
+      .pre3{
+        background: rgb(230, 230, 230);
+        border-radius: 25px;
+        border: 5px;
+        width: 1000px;
+        height: 320px;
+        line-height: 1.2;
+        padding-left: 50px;
+        border-left: #ff77e1 5px solid;
+
+      }
+
+
