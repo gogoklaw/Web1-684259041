@@ -1,50 +1,60 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="H">
-      <header class="header">
-        <h1><span style="color: white; text-shadow: none;">แบบฝึกปฏิบัติ:</span> HTML Heading</h1>
-        <p>ฝึกใช้แท็ก &lt;h1> – &lt;h6> และการปรับขนาดหัวข้อด้วย CSS</p>
-      </header>
-    </div>
-    <div class="container">
-        <div class="content">
-         <ul>
-             <div class="item">
-                <li><span class="tagh1">H1:</span> &nbsp; <h1>หัวข้อหลักของหน้าเว็บ</h1></li>
-            </div>
 
-             <div class="item">
-                <li><span class="tagh2">H2:</span> &nbsp; <h2>หัวข้อรอง</h2> </li>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
 
-             <div class="item">
-                <li><span class="tagh3">H3:</span> &nbsp; <h3>หัวข้อย่อยระดับ 3</h3> </li>
-            </div>
+<body>
+  <nav>
+    <h1>แบบฝึกปฏิบัติ</h1>
+  </nav>
+  <div class="H">
+      <h1 style="color: #fa4c80;"><span style="color: white; text-shadow: none;">แบบฝึกปฏิบัติ:</span> HTML Heading</h1>
+      <p>ฝึกใช้แท็ก &lt;h1> – &lt;h6> และการปรับขนาดหัวข้อด้วย CSS</p>
+  </div>
+  <div class="container">
+    <div class="content">
+      <ul>
+        <div class="item">
+          <li><span class="tagh1">H1:</span> &nbsp; <h1>หัวข้อหลักของหน้าเว็บ</h1>
+          </li>
+        </div>
 
-             <div class="item">
-                <li><span class="tagh4">H4:</span> &nbsp; <h4>หัวข้อย่อยระดับ 4</h4> </li>
-            </div>
+        <div class="item">
+          <li><span class="tagh2">H2:</span> &nbsp; <h2>หัวข้อรอง</h2>
+          </li>
+        </div>
 
-             <div class="item">
-                <li><span class="tagh5">H5:</span> &nbsp; <h5>หัวข้อย่อยระดับ 5</h5> </li>
-            </div>
+        <div class="item">
+          <li><span class="tagh3">H3:</span> &nbsp; <h3>หัวข้อย่อยระดับ 3</h3>
+          </li>
+        </div>
 
-             <div class="item">
-                <li><span class="tagh6">H6:</span> &nbsp; <h6>หัวข้อย่อยระดับ 6</h6> </li>
-            </div>
-        </ul>
+        <div class="item">
+          <li><span class="tagh4">H4:</span> &nbsp; <h4>หัวข้อย่อยระดับ 4</h4>
+          </li>
+        </div>
+
+        <div class="item">
+          <li><span class="tagh5">H5:</span> &nbsp; <h5>หัวข้อย่อยระดับ 5</h5>
+          </li>
+        </div>
+
+        <div class="item">
+          <li><span class="tagh6">H6:</span> &nbsp; <h6>หัวข้อย่อยระดับ 6</h6>
+          </li>
+        </div>
+      </ul>
     </div>
 
     <div class="content2" style="display: grid;">
-        <h1 style="margin-top: 40px;">ตัวอย่างการใช้</h1>
-        <pre>
+      <h1 style="margin-top: 40px;">ตัวอย่างการใช้</h1>
+      <pre>
 
             &lt;H1&gt; Welcome to My Website &lt;/H1&gt;
             &lt;H2&gt; HTML Basics &lt;/H2&gt;
@@ -53,10 +63,10 @@
             &lt;H5&gt; Example Code &lt;/H5&gt;
             &lt;H6&gt; Note: Case Sensitive&lt;/H6&gt;
         </pre>
-        <br>
-        <p>เมื่อแสดงผลจะได้ขนาดลดหลั่นแบบนี้:</p>
-        <br>
-        <pre class="pre3">
+      <br>
+      <p>เมื่อแสดงผลจะได้ขนาดลดหลั่นแบบนี้:</p>
+      <br>
+      <pre class="pre3">
 
                     <h1>H1: Welcome to My Website</h1>
                     <h2>H2: HTML Basics</h2>
@@ -67,5 +77,7 @@
 
         </pre>
     </div>
-  </body>
+    <button class="button" onclick="window.location.href='index.html'">Back to Homepage</button>  
+</body>
+
 </html>

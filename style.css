@@ -5,7 +5,7 @@
       }
 
       body {
-        font-family: Arial, Helvetica, sans-serif;
+         font-family: 'IBM Plex Sans Thai', sans-serif;
         background-color: #ffb8cd;
         line-height: 1.7;
         display: flex;
@@ -20,8 +20,7 @@
       .H{
         display: flex;
         flex-direction: column;
-        margin: 100px;
-        align-items: center;
+        margin: 50px 0 50px 430px;
       }
 
       .content{
@@ -51,13 +50,7 @@
         align-items: center;
         justify-content: center;
       }
-
-      .header {
-        width: 1000px;
-        height: 50px;
-        color: #ff6694;
-      }
-
+      
       .item li{
         margin: 25px;
         display: flex;
@@ -140,4 +133,26 @@
 
       }
 
+      nav{
+        background: #f085a5;
+        height: 100px;
+        box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.568);
+        border-radius: 0px 0px 25px 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
+      nav h1{
+        color: white;
+      }
+
+      .button {
+        background-color: #f085a5;
+        color: white;
+        padding: 15px 32px;
+        font-size: 16px;
+        margin: 4px 0px 4px 900px;
+        border-radius: 25px;
+        margin-top: 50px;
+      }
