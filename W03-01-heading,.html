@@ -1,171 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
+        *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        body {
+        body{
             font-family: Arial, Helvetica, sans-serif;
             background-color: #f5adc1;
             line-height: 1.5;
         }
 
-        .header {
+        .header{
             display: flex;
             flex-direction: column;
             text-align: center;
             justify-content: center;
-            background: linear-gradient(270deg, #ff3399, #ffaa5b);
+            background: linear-gradient(270deg ,#ff3399 ,#ffaa5b);
             color: #fff;
             height: 150px;
             gap: 5px;
             box-shadow: 2px 8px rgba(223, 222, 222, 0.352);
         }
 
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .Heronav {
-            font-size: 18px;
+        .Heronav{
+            font-size: 18px; 
             text-decoration: none;
         }
 
-        .card {
-            width: 1100px;
-            height: fit-content;
-            background: white;
-            margin-top: 50px;
-            border-radius: 25px;
-            box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.267);
-            border-left: 12px solid #ff6e99;
+        .Heronav:hover{
+            
         }
-
-        .Heading {
-            margin-top: 50px;
-        }
-
-        .content {
-            margin: 50px 90px;
-        }
-
-        pre {
-            background: #e6e6e6; 
-            padding: 20px; 
-            font-size: 16px; 
-            width: fit-content; 
-            overflow-x: auto;
-            border-left: 5px solid #ff6e99;
-        }
-
-        .button {
-        background-color: #f085a5;
-        color: white;
-        padding: 15px 32px;
-        font-size: 16px;
-        margin: 4px 0px 4px 900px;
-        border-radius: 25px;
-        margin-top: 50px;
-      }
     </style>
 </head>
-
 <body>
     <header class="header">
         <h1>เรียนรู้เว็บเบื้องต้น</h1>
-        <a href="index.html" class="Heronav">Home</a>
+        <a href="" class="Heronav">Home</a>
     </header>
     <div class="container">
-        <div class="Heading">
-            <h1>Workshop: HTML Heading</h1>
-            <p>ฝึกใช้แท็ก &lt;h1> – &lt;h6> และการปรับขนาดหัวข้อด้วย CSS</p>
+        <div class="content">
+            
         </div>
-        <div class="card">
-            <div class="content">
-                <h2> 1. ความหมายของ Headings (H1–H6) </h2>
-                <br>
-                <p> HTML มีหัวข้อทั้งหมด 6 ระดับ </p>
-                <br>
-                <ul>
-                    <li> &lt;h1&gt; H1 – หัวข้อใหญ่สุด ใช้ส าหรับชื่อหน้าเว็บหรือหัวข้อหลัก </li>
-                    <li> &lt;h2&gt; H2 – หัวข้อรอง แบ่ง Section ของเนื้อหา </li>
-                    <li> &lt;h3&gt; H3 – ใช้น้อย แต่เน้นลำดับข้อมูล</li>
-                    <li> &lt;h4&gt; H4 – ย่อยลงไปอีกระดับ </li>
-                    <li> &lt;h5&gt; H5 – ใช้น้อย แต่เน้นลำดับข้อมูล </li>
-                    <li> &lt;h6&gt; H6 – เล็กสุด ใช้กับหัวข้อระดับลึก</li>
-                </ul>
-                <br>
-                <p>H1 ควรมีเพียง 1 อันในแต่ละหน้า เพื่อช่วย SEO และโครงสร้างเอกสาร</p>
-
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="content">
-                <h2>2. ตัวอยา่งการใช ้H1–H6</h2>
-                <br>
-                <pre
-                    style="background: #e6e6e6; padding: 20px; font-size: 16px; width: 500px; overflow-x: auto; border-left: 5px solid #ff6e99;">
-        &lt;H1&gt; Welcome to My Website &lt;/H1&gt;
-        &lt;H2&gt; HTML Basics &lt;/H2&gt;
-        &lt;H3&gt; What is HTML? &lt;/H3&gt;
-        &lt;H4&gt; HTML Syntax &lt;/H4&gt;
-        &lt;H5&gt; Example Code &lt;/H5&gt;
-        &lt;H6&gt; Note: Case Sensitive&lt;/H6&gt;
-                </pre>
-                <br>
-                <p>เมื่อแสดงผลจะได้ขนาดลดหลั่นแบบนี้:</p>
-                <div style="line-height: 2;">
-                    <h1> Welcome to My Website </h1>
-                    <h2> HTML Basics </h2>
-                    <h3> What is HTML? </h3>
-                    <h4> HTML Syntax </h4>
-                    <h5> Example Code </h5>
-                    <h6> Note: Case Sensitive </h6>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="content">
-                <h2>3. ถ ้าอยากให ้หัวข ้อ “ใหญ่กว่า” หรือ “เล็กกว่า” ขนาดเดิม?</h2>
-                <br>
-                <p>ใช ้CSS แทนการเลือก h1–h6 ผิดลำดับเช่น :</p>
-                <br>
-                <pre>
-h3 {
-  font-size: 40px; /* ท าให้ H3 ใหญ่เท่า H1 ได ้ */
-  color: #c4005a;
-    }
-h5 {
-  font-size: 12px; /* ท าให้ H5 เล็กลงอีก */
-    }
-                </pre>
-                <br>
-                <p>หรือสามารถก าหนดเฉพาะบางหัวข ้อได ้:</p>
-                <br>
-                <pre>
-&lt;h3 style="font-size: 50px; color: blue;"&gt;Big Custom Heading&lt;/h3&gt;
-                </pre>
-                <br>
-                <pre style="background:white; border-left: 5px solid #e6e6e6;">
-  จำไว้ว่าดับหัวข้อควรเป็น H1 → H2 → H3 ตามโครงสรา้งเนื้อหา ไม่ควรใช ้H5 เพื่อให ้ “ตัวเล็กลง” หรอื ใช ้H1
-เพื่อให ้ “ตัวใหญ่ขึ้น” → ต ้องแก ้ด ้วย CSS เท่านั้น
-                </pre>
-            </div>
-        </div>
-
-        <button class="button" onclick="window.location.href='W03-02-heading.html'">Next to Workshop 2</button>
+    </div>
 </body>
-
 </html>

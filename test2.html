@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        main{
+            flex: 1;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f8f9fc;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: #f15282;
+            color: white;
+            padding: 18px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-size: 36px;
+        }
+
+        .logo p {
+            margin-top: 5px;
+            font-size: 16px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 17px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffe3ec;
+        }
+
+        .container {
+            width: 95%;
+            margin: 25px auto;
+        }
+
+        .title-box {
+            background: white;
+            border: 2px solid #f15282;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .title-box h2 {
+            font-size: 34px;
+            color: #f15282;
+        }
+
+        .title-box p {
+            margin-top: 10px;
+        }
+
+        .content {
+            background: #ffd6e3;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            width: 32%;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #f15282;
+            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+        }
+
+        .card h3 {
+            color: #f15282;
+            margin-bottom: 15px;
+        }
+
+        .card ul {
+            padding-left: 20px;
+        }
+
+        .card li {
+            margin-bottom: 8px;
+        }
+
+        .note {
+            background: white;
+            border-left: 8px solid #f15282;
+            padding: 20px;
+            margin-top: 25px;
+            border-radius: 8px;
+        }
+
+        footer {
+            margin-top: 30px;
+            background: white;
+            border-top: 3px solid #f15282;
+            text-align: center;
+            padding: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>เรียนรู้เว็บเบื้องต้น</h1>
+            <p>Basic Web Development</p>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="W03-02-heading.html">Heading</a>
+            <a href="test2.html">Formatting</a>
+            <a href="#">Links</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="title-box">
+                <h2>แบบฝึกปฏิบัติ : HTML Formatting</h2>
+                <p>เรียนรู้การจัดรูปแบบข้อความด้วยแท็ก HTML พร้อมตกแต่งด้วย CSS</p>
+            </div>
+
+            <div class="content">
+                <div class="cards">
+                    <div class="card">
+                        <h3>ตัวอย่างผลลัพธ์</h3>
+
+                        <p><b>B:</b> <b>ข้อความตัวหนา</b></p>
+                        <p><strong>STRONG:</strong> <strong>ข้อความสำคัญ</strong></p>
+                        <p><i>I:</i> <i>ข้อความเอียง</i></p>
+                        <p><em>EM:</em> <em>ข้อความเน้นย้ำ</em></p>
+                        <p><u>U:</u> <u>ข้อความขีดเส้นใต้</u></p>
+                        <p><mark>MARK:</mark> <mark>ข้อความที่ถูกเน้น</mark></p>
+                        <p><small>SMALL:</small> <small>ข้อความขนาดเล็ก</small></p>
+                        <p><del>DEL:</del> <del>ข้อความที่ถูกลบ</del></p>
+                        <p>SUP: x<sup>2</sup></p>
+                        <p>SUB: H<sub>2</sub>O</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>&lt;/&gt; ตัวอย่างโค้ด HTML</h3>
+
+                        <pre>
+&lt;b&gt;ข้อความตัวหนา&lt;/b&gt;
+&lt;strong&gt;ข้อความสำคัญ&lt;/strong&gt;
+&lt;i&gt;ข้อความเอียง&lt;/i&gt;
+&lt;em&gt;ข้อความเน้นย้ำ&lt;/em&gt;
+&lt;u&gt;ข้อความขีดเส้นใต้&lt;/u&gt;
+&lt;mark&gt;ข้อความที่ถูกเน้น&lt;/mark&gt;
+&lt;small&gt;ข้อความขนาดเล็ก&lt;/small&gt;
+&lt;del&gt;ข้อความที่ถูกลบ&lt;/del&gt;
+x&lt;sup&gt;2&lt;/sup&gt;
+H&lt;sub&gt;2&lt;/sub&gt;O
+                    </pre>
+                    </div>
+
+                    <div class="card">
+                        <h3>&lt;/&gt; ตัวอย่างโค้ด HTML</h3>
+
+                        <pre>
+&lt;b&gt;ข้อความตัวหนา&lt;/b&gt;  
+&lt;strong&gt;ข้อความสำคัญ&lt;/strong&gt;
+&lt;i&gt;ข้อความเอียง&lt;/i&gt;
+&lt;em&gt;ข้อความเน้นย้ำ&lt;/em&gt;
+&lt;u&gt;ข้อความขีดเส้นใต้&lt;/u&gt;
+&lt;mark&gt;ข้อความที่ถูกเน้น&lt;/mark&gt;
+&lt;small&gt;ข้อความขนาดเล็ก&lt;/small&gt;
+&lt;del&gt;ข้อความที่ถูกลบ&lt;/del&gt;
+x&lt;sup&gt;2&lt;/sup&gt;
+H&lt;sub&gt;2&lt;/sub&gt;O
+                    </pre>
+                    </div>
+                </div>
+
+                <div class="note">
+                    <h3>เกร็ดความรู้</h3>
+                    <p>
+                        แท็ก HTML Formatting แต่ละแท็กมีหน้าที่แตกต่างกัน เช่น<strong>strong</strong>
+                        ใช้เน้นความสำคัญของข้อความ<em>em</em> ใช้เน้นข้อความ<mark>mark</mark> ใช้ไฮไลต์ข้อความและ
+                        <del>del</del>
+                        ใช้แสดงข้อความที่ถูกลบการเลือกใช้แท็กอย่างถูกต้องจะช่วยให้เว็บไซต์มีมาตรฐานและอ่านง่ายมากขึ้น
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>Copyright © Teerapat EIEI All rights reserved.</footer>
+</body>
+
+</html>
