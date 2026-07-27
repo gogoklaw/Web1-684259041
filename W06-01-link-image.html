@@ -1,91 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Link and Image</title>
-    <link rel="stylesheet" href="CSS/W06-01-link-image.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="CSS/W06-01-link-image.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Mitr:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="container">
-        <header class="site-header">
-            <!-- Brand -->
-            <div class="brand">
-                <div class="brand-logo">🐬</div>
-                <div class="brand-text">
-                    <h2>เรียนรู้เว็บเบื้องต้น</h2>
-                    <p>Web Development Basics</p>
+      <header class="site-header">
+        <!-- Brand -->
+        <div class="brand">
+          <div class="brand-logo">🐬</div>
+          <div class="brand-text">
+            <h2>เรียนรู้เว็บเบื้องต้น</h2>
+            <p>Web Development Basics</p>
+          </div>
+        </div>
+        <!-- Nav -->
+        <div class="main-nav">
+          <ul class="nav-list">
+            <li><a href="index.html">🐘 Home</a></li>
+            <li><a href="W03-02-heading.html">🐔 Heading</a></li>
+            <li><a href="FormattingW05.html">🦈 Formatting</a></li>
+            <li><a href="#">🦨 Link</a></li>
+            <li><a href="#">🐍 Practice</a></li>
+          </ul>
+        </div>
+      </header>
+      <main class="main-layout">
+        <section class="left-content">
+          <!-- hero -------------->
+          <section class="hero">
+            <div class="hero-text">
+              <h1>แบบฝึกปฏิบัติ: HTML Link และ Image</h1>
+              <p>เรียนรู้การสร้างลิ้งและการแทรกรูปภาพด้วยแท็ก HTML</p>
+              <p>พร้อมตัวอย่างและการตกแต่งด้วย CSS</p>
+            </div>
+
+            <div class="hero-img">
+              <div class="img-menu">
+                <div class="red"></div>
+                <div class="yellow"></div>
+                <div class="green"></div>
+              </div>
+              <img src="img/Dolfin.jpg" alt="Dolfin" width="400" height="200" />
+            </div>
+          </section>
+
+          <!-- Link -------------->
+          <section class="link">
+            <h2>⛓️‍💥 ตัวอย่างลิงค์ (Link Examples)</h2>
+            <div class="content">
+              <div class="result-box">
+                <div class="rb-header">
+                  <h2>ผลลัพธ์</h2>
                 </div>
-            </div>
-            <!-- Nav -->
-            <div class="main-nav">
-                <ul class="nav-list">
-                    <li><a href="index.html">🐘Home</a></li>
-                    <li><a href="W03-02-heading.html">🐔Heading</a></li>
-                    <li><a href="FormattingW05.html">🦈Formatting</a></li>
-                    <li><a href="#">🦨Link</a></li>
-                    <li><a href="#">🐍Practice</a></li>
-                </ul>
-            </div>
-        </header>
-        <main class="main-layout">
-            <section class="left-content">
-                <!-- hero -------------->
-                <section class="hero">
-                    <div class="hero-text">
-                        <h1>แบบฝึกปฏิบัติ: HTML Link และ Image</h1>
-                        <p>เรียนรู้การสร้างลิ้งและการแทรกรูปภาพด้วยแท็ก HTML</p>
-                        <p>พร้อมตัวอย่างและการตกแต่งด้วย CSS</p>
+
+                <div class="rb-text">
+                  <br />
+                  <a href="https://www.npru.ac.th">ไปยังเว็บไซต์มหาวิทยาลัย</a>
+                  <br />
+                  <a href="https://www.google.com" target="_blank"
+                    >ไปยัง Google ในแท็บใหม่</a
+                  >
+                  <br />
+
+                  <div class="mail">
+                    <div class="_mail">✉</div>
+                    <a href="">ส่งอีเมลถึงผู้สอน</a>
+                  </div>
+
+                  <div class="B-back">
+                    <a href="index.html"> ← กลับไปยังหน้าแรก </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="c-box">
+                <div class="c-header">
+                  <h2>โค้ด HTML</h2>
+                </div>
+                  <div class="code-html">
+
+                    <div class="code-line">
+                      <span class="line-number">1</span>
+                      <span class="tag">&lt;a</span>
+                      <span class="attr">href</span>
+                      <span>=</span> 
+                      <span class="string">"https://www.npru.ac.th"</span>
+                      <span class="tag">&gt;</span>ไปยังเว็บไซต์มหาวิทยาลัย
+                      <span class="tag">&lt;/a&gt;</span>
                     </div>
 
-                    <div class="hero-img">
-                        <img src="Image/dolfin-safari.jpg" alt="Dolfin" width="400" height="200">
+                    <div class="code-line">
+                      <span class="line-number">2</span>
+                      <span class="tag">&lt;a</span>
+                      <span class="attr">href</span>
+                      <span>=</span>
+                      <span class="string">"https://www.google.com"</span>
+                      <span class="attr">target</span>
+                      <span>=</span>
+                      <span class="string">"_blank"</span>
+                      <span class="tag">&gt;</span>
+                      <span>ไปยัง Google ในแท็บใหม่</span>
+                      <span class="tag">&lt;/a&gt;</span>
                     </div>
-                </section>
 
-                <!-- Link -------------->
-                <section class="link">
+                    <div class="code-line">
+                      <span class="line-number">3</span>
+                      <span class="tag">&lt;a</span>
+                      <span class="attr">href</span>=<span class="string"
+                        >"mailto:teacher@example.com"</span
+                      ><span class="tag">&gt;</span>ส่งอีเมลถึงผู้สอน<span
+                        class="tag"
+                        >&lt;/a&gt;</span
+                      >
+                    </div>
 
-                </section>
+                    <div class="code-line">
+                      <span class="line-number">4</span>
+                      <span class="tag">&lt;a</span>
+                      <span class="attr">href</span>=<span class="string"
+                        >"index.html"</span
+                      ><span class="tag">&gt;</span>กลับไปยังหน้าแรก<span
+                        class="tag"
+                        >&lt;/a&gt;</span
+                      >
+                    </div>
 
-                <!-- Image ------------->
-                <article class="card">
+                  </div>
+              </div>
+            </div>
+          </section>
 
-                </article>
+          <!-- Image ------------->
+          <article class="card">
+            <h2>🌆 ตัวอย่างรูปภาพ (Image Examples)</h2>
+            <div class="content">
+                
+            </div>
+          </article>
+        </section>
 
-            </section>
+        <section class="right-sidebar">
+          <div class="side-card">
+            <h2>🎯 จุดประสงค์การเรียนรู้</h2>
+            <div class="card-content">
+              <span class="number">1</span>
+              <p>
+                อธิบายการใช้งานแท็ก &lt;a&gt; เพื่อสร้างลิงก์ไปยังหน้า <br />
+                เว็บหรือแหล่งต่างๆ
+              </p>
+            </div>
 
-            <section class="right-sidebar">
-                <div class="side-card">
+            <div class="card-content">
+              <span class="number">2</span>
+              <p>
+                การแทรกรูปภาพด้วยแท็ก &lt;img&gt; พร้อมกำหนดคุณสมบัติ <br />
+                พื้นฐาน
+              </p>
+            </div>
 
-                </div>
+            <div class="card-content">
+              <span class="number">3</span>
+              <p>
+                ตกแต่งลิงก์และรูปภาพด้วย CSS เพื่อความสวยงามและ<br />น่าใช้งาน
+              </p>
+            </div>
+          </div>
 
-                <div class="side-card">
+          <div class="side-card"></div>
 
-                </div>
+          <div class="side-card"></div>
 
-                <div class="side-card">
+          <div class="submit-card"></div>
+        </section>
+      </main>
 
-                </div>
-
-                <div class="submit-card">
-
-                </div>
-            </section>
-        </main>
-
-        <footer class="tip-box">
-
-        </footer>
+      <footer class="tip-box"></footer>
     </div>
-</body>
-
+  </body>
 </html>
