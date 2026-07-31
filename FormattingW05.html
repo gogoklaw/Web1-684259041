@@ -115,7 +115,7 @@
         .cards {
             display: flex;
             justify-content: space-between;
-            
+
             gap: 20px;
             background: linear-gradient(90deg, #ff9bb9, #facc68);
             padding: 25px;
@@ -130,7 +130,7 @@
             border-radius: 20px;
             border: solid 2px #f0618c;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
-            
+
         }
 
         .card h3 {
@@ -208,7 +208,7 @@
             border-radius: 14px;
             color: white;
             box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.12);
-            border: solid 2px #ff719c8a ;
+            border: solid 2px #ff719c8a;
         }
 
         .box h1 {
@@ -381,9 +381,7 @@
             flex-shrink: 0;
         }
 
-        .check.orange {
-            
-        }
+        .check.orange {}
 
         code.inline {
             background: #eef1f8;
@@ -402,6 +400,38 @@
             font-size: 12.5px;
             font-family: Consolas, monospace;
         }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .CIFooter {
+            display: flex;
+            line-height: 1.6;
+            flex-direction: column;
+            width: 200px;
+            text-align: left;
+            margin: 25px;
+            text-decoration: none;
+        }
+
+        .CIFooter h2 {
+            font-size: 16px;
+            color: #1e2a4a;
+            margin-bottom: 10px;
+        }
+
+        .CIFooter a {
+            color: #5b6474;
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+
+        
     </style>
 </head>
 
@@ -415,7 +445,7 @@
             </div>
         </div>
 
-         <nav>
+        <nav>
             <a href="index.html">Home</a>
             <a href="W03-02-heading.html">Heading</a>
             <a href="FormattingW05.html">Formatting</a>
@@ -489,18 +519,51 @@
                     <div>
                         <h3>เกร็ดความรู้</h3>
                         <p>
-                            แท็ก HTML Formatting แต่ละแท็กมีหน้าที่แตกต่างกัน เช่น <code class="inline">&lt;strong&gt;</code>
+                            แท็ก HTML Formatting แต่ละแท็กมีหน้าที่แตกต่างกัน เช่น <code
+                                class="inline">&lt;strong&gt;</code>
                             ใช้เน้นความสำคัญของข้อความ <code class="inline">&lt;em&gt;</code> ใช้เน้นข้อความ
                             <code class="inline">&lt;mark&gt;</code> ใช้ไฮไลต์ข้อความ และ
                             <code class="inline">&lt;del&gt;</code>
-                            ใช้แสดงข้อความที่ถูกลบ การเลือกใช้แท็กอย่างถูกต้องจะช่วยให้เว็บไซต์มีมาตรฐานและอ่านง่ายมากขึ้น
+                            ใช้แสดงข้อความที่ถูกลบ
+                            การเลือกใช้แท็กอย่างถูกต้องจะช่วยให้เว็บไซต์มีมาตรฐานและอ่านง่ายมากขึ้น
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer>Copyright © Teerapat EIEI All rights reserved.</footer>
+    <footer>
+        <div class="footer-content">
+            <div class="CIFooter">
+                <h2>เรียนรู้เว็บเบื้องต้น</h2>
+                <p>แบบฝึกปฏิบัตินี้จัดทำขึ้นเพื่อให้นักศึกษาเข้าใจการใช้แท็ก HTML Formatting และสามารถนำ CSS มาช่วยตกแต่งหน้าเว็บให้อ่านง่ายและสวยงาม</p>
+                <p>รายวิชา: การออกแบบและพัฒนาเว็บเพจเบื้องต้น</p>
+            </div>
+            <div class="CIFooter">
+                <h2>เมนูบทเรียน</h2>
+                <a href="index.html">หน้าแรก</a>
+                <a href="W03-02-heading.html">HTML Heading</a>
+                <a href="W05-01-formatting.html">HTML Formatting</a>
+                <a href="W06-01-link-image.html">HTML Links</a>
+                <a href="">แบบฝึกปฏิบัติ</a>
+            </div>
+            <div class="CIFooter">
+                <h2>Legal</h2>
+                <a href="#">Privacy policy</a>
+                <a href="#">Terms of service</a>
+                <a href="#">Cookie policy</a>
+            </div>
+            <div class="CIFooter">
+                <h2>Social media</h2>
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+                <a href="https://github.com/gogoklaw/Web1-684259041.git">GitHub</a>
+            </div>
+        </div>
+
+        <hr>
+        Copyright © Teerapat EIEI All rights reserved.
+    </footer>
 </body>
 
 </html>
