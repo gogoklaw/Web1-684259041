@@ -1,142 +1,416 @@
 * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Geist", sans-serif;
+    color: #94a3b8;
+}
 
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: #ffb8cd;
-        line-height: 1.7;
-        display: flex;
-        flex-direction: column;
-      }
+:root {
+    --color-1: #010f1f;
+    --color-2: #131b2e;
+    --color-3: #38bdf8;
+    --color-4: #233143;
+}
 
-      ul {
-        list-style: none;
-        padding: 10px;
-      }
+body {
+    background-color: var(--color-1);
+    background-image:
+        linear-gradient(#ffffff15 1px, transparent 1px),
+        linear-gradient(90deg, #ffffff15 1px, transparent 1px);
+    background-size: 50px 50px;
 
-      .H{
-        display: flex;
-        flex-direction: column;
-        margin: 100px;
-        align-items: center;
-      }
+    opacity: 1;
+    animation: Pageload 2s ease forwards;
+}
 
-      .content{
-        display: flex;
-        width: 1100px;
-        height: fit-content;
-        background-color: #ffffff;
-        border-radius: 25px;
-        box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
-        margin-bottom: 50px;
-      }
+@keyframes Pageload {
+    from {
+        opacity: 0;
+    }
 
-      .content2{
-        display: flex;
-        width: 1100px;
-        height: 800px;
-        background-color: #ffffff;
-        border-radius: 25px;
-        box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
-        justify-content: center;
-      }
+    to {
+        opacity: 1;
+    }
+}
 
-      .container {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    background-color: var(--color-1);
+    width: 100%;
+    box-shadow: 0 0 20px var(--color-3);
 
-      .header {
-        width: 1000px;
-        height: 50px;
-        color: #ff6694;
-      }
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
 
-      .item li{
-        margin: 25px;
-        display: flex;
-        gap: 5px;
-        align-items: center;
-      }
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    background-color: var(--color-1);
+}
 
-      .tagh1{
-        border-radius: 10px;
-        width: fit-content;
-        height: fit-content;
-        padding: 10px;
-        background-color: #1565c0;
-        color: white;
-      }
+.logo,
+.menu {
+    margin: 0px 100px;
+    padding: 10px 0px;
+}
 
-      .tagh2{
-        border-radius: 10px;
-        width: fit-content;
-        height: fit-content;
-        padding: 10px;
-        background-color: #00897b;
-        color: white;
-      }
+header img {
+    border-radius: 50%;
+}
 
-      .tagh3{
-        border-radius: 10px;
-        width: fit-content;
-        height: fit-content;
-        padding: 10px;
-        background-color: #43a047;
-        color: white;
-      }
+.menu ul {
+    display: flex;
+    list-style: none;
+}
 
-      .tagh4{
-        border-radius: 10px;
-        width: fit-content;
-        height: fit-content;
-        padding: 10px;
-        background-color: #f9a825;
-        color: white;
-      }
+.menu ul a {
+    padding: 6px 10px 6px 10px;
+    border-radius: 14px;
+    border-bottom: 1px solid var(--color-3);
+    text-decoration: none;
+}
 
-      .tagh5{
-        border-radius: 10px;
-        width: fit-content;
-        height: fit-content;
-        padding: 10px;
-        background-color: #e64a19;
-        color: white;
-      }
+.menu ul a:hover{
+    box-shadow: 0 0 5px var(--color-3);
+    animation: hoverr 1s infinite;
+}
 
-      .tagh6{
-        border-radius: 10px;
-        width: fit-content;
-        height: fit-content;
-        padding: 10px;
-        background-color: #7e57c2;
-        color: white;
-      }
+@keyframes hoverr{
+    0%,100%{
+        box-shadow: 0 0 5px var(--color-3);
+    }
 
-      pre{
-        background: rgb(230, 230, 230);
-        border-radius: 25px;
-        border-left: #0b85fe 5px solid;
-        border: 5px;
-        width: 1000px;
-        border-left: #ff77e1 5px solid;
-      }
+    50%{
+        box-shadow: 0 0 15px var(--color-3);
+    }
+}
 
-      .pre3{
-        background: rgb(230, 230, 230);
-        border-radius: 25px;
-        border: 5px;
-        width: 1000px;
-        height: 320px;
-        line-height: 1.2;
-        padding-left: 50px;
-        border-left: #ff77e1 5px solid;
-      }
+main{
+    display: flex;
+}
 
+.sidebar{
+    margin-top: 50px;
+    width: 60px;
+    min-height: 100vh;
+    background-color: var(--color-1);
+    border-right: 1px solid var(--color-3);
+    transition: 0.3s;
+    overflow: hidden;
+    position:fixed;
+    top: 20px; 
+    height: calc(100vh - 40px);
+    overflow-y: auto;
+}
 
+.sidebar:hover{
+    width: 200px;
+    border-radius: 0px 24px 24px 0px;
+    
+}
+.sidebar:hover ul li a span{
+    opacity: 1;
+    visibility: visible;
+}
+
+.sidebar ul li a{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+.sidebar ul li a i{
+    margin-left: 7px;
+}
+
+.sidebar ul li a span{
+    opacity: 0;
+    visibility: 0;
+    color: #94a3b8;
+}
+
+.sidebar ul li{
+    margin-top: 15px;
+}
+
+.sidebar ul li:hover{
+    background-color: var(--color-4);
+    border-radius: 16px
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.tap{
+    width: 200px;
+    position: absolute;
+}
+
+.circle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    animation: totop 2s reverse;
+}
+
+@keyframes totop{
+    0%{transform: translateY(0);}
+    100% {transform: translateY(100%);}
+}
+
+.O1 {
+    width: 850px;
+    height: 850px;
+    background: transparent;
+    border-radius: 50%;
+    border: 2px solid #7bd0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:
+        0 0 60px #00829990,
+        inset 0 0 40px #00829990;
+
+    margin-top: 30px;
+
+    animation: O1Flicker 4s infinite;
+}
+
+.O2 {
+    width: 600px;
+    height: 600px;
+    background: transparent;
+    border-radius: 50%;
+    border: 2px solid #7bd0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:
+        0 0 30px #00829990,
+        inset 0 0 15px #00829990;
+    
+    animation: O2Flicker 4s infinite;
+}
+
+@keyframes O1Flicker{
+    0%, 100% {
+        box-shadow:
+            0 0 30px var(--color-3),
+            inset 0 0 20px var(--color-3);
+    }
+
+    50% {
+        box-shadow:
+            0 0 60px var(--color-3),
+            inset 0 0 40px var(--color-3);
+    }
+}
+
+@keyframes O2Flicker{
+    0%, 100% {
+        box-shadow:
+            0 0 15px var(--color-3),
+            inset 0 0 10px var(--color-3);
+    }
+
+    50% {
+        box-shadow:
+            0 0 30px var(--color-3),
+            inset 0 0 20px var(--color-3);
+    }
+}
+
+.O3 {
+    width: 400px;
+    height: 400px;
+    background-color: var(--color-1);
+    border-radius: 50%;
+    border: 2px solid #7bd0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:
+        0 0 40px #00829990,
+        inset 0 0 25px #00829990;
+    animation: Flicker 5s infinite;
+}
+
+@keyframes Flicker {
+    0%, 100% {
+        box-shadow:
+            0 0 15px var(--color-3),
+            inset 0 0 10px var(--color-3);
+    }
+
+    50% {
+        box-shadow:
+            0 0 40px var(--color-3),
+            inset 0 0 20px var(--color-3);
+    }
+}
+
+.O4 {
+    width: 300px;
+    height: 300px;
+    background-color: var(--color-1);
+    border-radius: 50%;
+    border: 3px solid #7bd0ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    animation: O4Flicker 5s infinite;
+    box-shadow: 
+    0 0 10px var(--color-3),
+    inset 0 0 20px var(--color-3);
+}
+
+@keyframes O4Flicker{
+    0%, 100% {
+        box-shadow:
+            0 0 5px var(--color-3),
+            inset 0 0 10px var(--color-3);
+    }
+
+    50% {
+        box-shadow:
+            0 0 10px var(--color-3),
+            inset 0 0 20px var(--color-3);
+    }
+}
+
+.O4 .head {
+    color: #22435a;
+    background-color: #021020;
+    border: 1px solid #22435a;
+    border-radius: 5px;
+    padding: 5px 20px 5px 35px;
+}
+
+.O4 a {
+    padding: 5px 25px;
+    background: linear-gradient(135deg, var(--color-1), var(--color-2), var(--color-3), var(--color-4));
+    background-size: 200% 100%;
+    background-position: left center;
+    transition: 0.5s ease-in-out;
+    color: white;
+    border-radius: 16px;
+    border: 1px solid #22435a;
+    text-decoration: none;
+
+    margin-top: 10px;
+}
+
+.O4 a:hover {
+    background-position: right center;
+}
+
+.O4 h1{
+    color:aliceblue;
+}
+
+#overlay {
+        position: fixed;
+        inset: 0;
+        background: #fff;
+
+        z-index: 9999;
+}
+
+.main-content {
+    margin-left: 80px;
+    padding: 50px 40px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.content-box {
+    padding: 25px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 16px;
+    border: 1px solid var(--color-3);
+    background-color: var(--color-1);
+
+    margin: 0;
+}
+
+.section{
+    border: 1px solid var(--color-3);
+    border-radius: 16px;
+    width: fit-content;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.point{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--color-3);
+}
+
+.code-text {
+    width: fit-content;             
+    background-color: #0b111c;      
+    border: 1px solid #384656;     
+    border-radius: 10px;            
+    overflow: hidden;       
+    margin:  20px 0px;
+}
+
+.Extext{
+    padding: 15px;
+}
+
+.button-tap{
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    background-color: var(--color-4);
+    height: 20px;
+    padding-left: 12px;
+}
+
+.button-tap div{
+    width: 10px;
+    height: 10px;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+
+.red{background-color: rgb(255, 62, 62);}
+.yellow{background-color: rgb(255, 222, 57);}
+.green{background-color: rgb(84, 249, 84);}
+
+.heading ul{
+    margin-left: 35px;
+}
