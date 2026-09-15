@@ -1,0 +1,1494 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="logoweb" width="50px" height="50px" />
+            <p>Html Tutorial</p>
+        </div>
+        <div class="menu">
+            <ul style="display: flex; gap: 25px">
+                <li><a href="index.html">HomePage</a></li>
+                <li><a href="#" id="contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="tap">
+                <div class="sidebar">
+                    <ul>
+                        <li>
+                            <a href="#01"><i class="fa-brands fa-html5"></i><span>Introduction to
+                                    HTML</span></a>
+                        </li>
+
+                        <li>
+                            <a href="#02"><i class="fa-solid fa-file-code"></i><span>HTML Document Structure</span></a>
+                        </li>
+
+                        <li>
+                            <a href="#03"><i class="fa-solid fa-heading"></i><span>Heading</span></a>
+                        </li>
+
+                        <li>
+                            <a href="#04"><i class="fa-solid fa-paragraph"></i><span>Paragraph</span></a>
+                        </li>
+
+                        <li>
+                            <a href="#05"><i class="fa-solid fa-font"></i><span>Text Formatting</span></a>
+                        </li>
+
+                        <li>
+                            <a href="#06"><i class="fa-solid fa-link"></i><span>Creating Links</span></a>
+                        </li>
+
+                        <li>
+                            <a href="#07"><i class="fa-solid fa-list"></i><span>Lists (Ordered and
+                                    Unordered)</span></a>
+                        </li>
+
+                        <li>
+                            <a href="#08"><i class="fa-solid fa-image"></i><span>Adding Images</span></a>
+                        </li>
+
+                        <li>
+                            <a href="#09"><i class="fa-solid fa-table"></i><span>Creating Tables</span></a>
+                        </li>
+
+                        <li>
+                            <a href="#10"><i class="fa-solid fa-rectangle-list"></i><span>HTML Forms</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <div class="content-box" id="01">
+                    <div class="section">
+                        <div class="point"></div>
+                        <p>SECTION 01</p>
+                    </div>
+                    <div class="heading">
+                        <h2>Introduction to HTML</h2>
+                        <br />
+                        <h3>What is HTML?</h3>
+                        <p>
+                            HTML ย่อมาจาก Hyper Text Markup Language
+                            เป็นภาษามาร์กอัปมาตรฐานที่ใช้สำหรับ
+                            สร้างและกำหนดโครงสร้างของเว็บเพจ
+                        </p>
+                        <br />
+                        <p>
+                            HTML ช่วยให้เราสามารถกำหนดส่วนต่าง ๆ ของเว็บไซต์ เช่น หัวข้อ
+                            ข้อความ รูปภาพ ลิงก์ ตาราง และแบบฟอร์มได้
+                        </p>
+                        <br />
+                        <hr />
+                        <br />
+                        <h3>How HTML Works & HTML Elements</h3>
+                        <p>
+                            HTML ใช้ Elements และ Tags เพื่อบอก Web Browser
+                            ว่าเนื้อหาแต่ละส่วนคืออะไร และควรแสดงผลอย่างไร
+                        </p>
+                        <p>ตัวอย่าง:</p>
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="Extext">
+                                <p>&lt;h1&gt;Hello World!&lt;/h1&gt;</p>
+                                <p>&lt;p&gt;Welcome to my website.&lt;/p&gt;</p>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <p>ในตัวอย่างนี้</p>
+                        </div>
+                        <ul>
+                            <li>&lt;h1&gt; ใช้สำหรับสร้าง Heading</li>
+                            <li>&lt;p&gt; ใช้สำหรับสร้าง Paragraph</li>
+                            <li>Browser จะอ่าน Tags แล้วแสดงผลออกมาเป็นหน้าเว็บ</li>
+                            <li>
+                                Tags จะไม่แสดงให้ผู้ใช้เห็นโดยตรง
+                                แต่จะกำหนดว่าเนื้อหานั้นควรแสดงผลอย่างไร
+                            </li>
+                        </ul>
+                        <p>
+                            HTML Element คือส่วนประกอบต่าง ๆ ของหน้าเว็บ โดยทั่วไปประกอบด้วย
+                            Opening Tag + Content + Closing Tag
+                        </p>
+                    </div>
+                </div>
+                <div class="content-box" id="02">
+                    <div class="section">
+                        <div class="point"></div>
+                        <p>SECTION 02</p>
+                    </div>
+
+                    <div class="heading">
+                        <h2>HTML Document Structure</h2>
+                        <br />
+
+                        <h3>Basic Structure of HTML</h3>
+                        <p>
+                            HTML Document จะมีโครงสร้างพื้นฐานที่ช่วยให้ Web Browser
+                            เข้าใจว่าแต่ละส่วนของเว็บไซต์ทำหน้าที่อะไร
+                        </p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+
+                            <div class="Extext">
+                                <p>&lt;!DOCTYPE html&gt;</p>
+                                <p>&lt;html&gt;</p>
+                                <p>&nbsp;&nbsp;&lt;head&gt;</p>
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;My
+                                    Website&lt;/title&gt;
+                                </p>
+                                <p>&nbsp;&nbsp;&lt;/head&gt;</p>
+                                <p>&nbsp;&nbsp;&lt;body&gt;</p>
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello World!&lt;/h1&gt;
+                                </p>
+                                <p>&nbsp;&nbsp;&lt;/body&gt;</p>
+                                <p>&lt;/html&gt;</p>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <p>โครงสร้างแต่ละส่วนมีหน้าที่ดังนี้</p>
+                        </div>
+
+                        <ul>
+                            <li>&lt;!DOCTYPE html&gt; ใช้ระบุว่าเอกสารนี้เป็น HTML5</li>
+                            <li>&lt;html&gt; เป็นรากของเอกสาร HTML ทั้งหมด</li>
+                            <li>
+                                &lt;head&gt; ใช้เก็บข้อมูลของหน้าเว็บ เช่น &lt;title&gt;
+                            </li>
+                            <li>&lt;body&gt; เป็นส่วนที่แสดงเนื้อหาบนหน้าเว็บ</li>
+                        </ul>
+
+                        <br />
+                        <hr />
+                        <br />
+
+                        <h3>HTML Tags</h3>
+                        <p>
+                            HTML Tags คือส่วนที่ใช้กำหนดว่าเนื้อหาแต่ละส่วนคืออะไร
+                            โดยทั่วไปจะมี Opening Tag และ Closing Tag
+                        </p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+
+                            <div class="Extext">
+                                <p>&lt;h1&gt;Hello, World!&lt;/h1&gt;</p>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <p>ในตัวอย่างนี้</p>
+                        </div>
+
+                        <ul>
+                            <li>&lt;h1&gt; คือ Opening Tag</li>
+                            <li>Hello, World! คือ Content</li>
+                            <li>&lt;/h1&gt; คือ Closing Tag</li>
+                        </ul>
+
+                        <br />
+                        <hr />
+                        <br />
+
+                        <h3>HTML Attributes</h3>
+                        <p>
+                            Attributes คือคุณสมบัติเพิ่มเติมของ HTML Tag
+                            ใช้สำหรับกำหนดรายละเอียดหรือพฤติกรรมเพิ่มเติมให้กับ Element
+                        </p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+
+                            <div class="Extext">
+                                <p>
+                                    &lt;img src="image.jpg" alt="A description of the image"&gt;
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <p>ตัวอย่าง Attributes ที่พบได้บ่อย</p>
+                        </div>
+
+                        <ul>
+                            <li>href ใช้กำหนด URL ของ Link</li>
+                            <li>src ใช้กำหนดตำแหน่งของไฟล์</li>
+                            <li>width ใช้กำหนดความกว้าง</li>
+                            <li>height ใช้กำหนดความสูง</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-box" id="03">
+                    <div class="section">
+                        <div class="point"></div>
+                        <p>SECTION 03</p>
+                    </div>
+
+                    <div class="heading">
+                        <h2>Heading</h2>
+                        <br />
+
+                        <h3>What is Heading?</h3>
+                        <p>
+                            Heading คือส่วนที่ใช้สำหรับกำหนดหัวข้อของเนื้อหาในหน้าเว็บ โดย
+                            HTML มี Heading ตั้งแต่ &lt;h1&gt; ถึง &lt;h6&gt;
+                        </p>
+
+                        <br />
+                        <hr />
+                        <br />
+
+                        <h3>Heading Levels</h3>
+                        <p>
+                            HTML มี Heading ทั้งหมด 6 ระดับ โดยแต่ละระดับจะมีความสำคัญ
+                            และขนาดที่แตกต่างกัน
+                        </p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+
+                            <div class="Extext">
+                                <p>&lt;h1&gt;Heading 1&lt;/h1&gt;</p>
+                                <p>&lt;h2&gt;Heading 2&lt;/h2&gt;</p>
+                                <p>&lt;h3&gt;Heading 3&lt;/h3&gt;</p>
+                                <p>&lt;h4&gt;Heading 4&lt;/h4&gt;</p>
+                                <p>&lt;h5&gt;Heading 5&lt;/h5&gt;</p>
+                                <p>&lt;h6&gt;Heading 6&lt;/h6&gt;</p>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <p>Heading แต่ละระดับ</p>
+                        </div>
+
+                        <ul>
+                            <li>&lt;h1&gt; ใช้สำหรับ Heading 1</li>
+                            <li>&lt;h2&gt; ใช้สำหรับ Heading 2</li>
+                            <li>&lt;h3&gt; ใช้สำหรับ Heading 3</li>
+                            <li>&lt;h4&gt; ใช้สำหรับ Heading 4</li>
+                            <li>&lt;h5&gt; ใช้สำหรับ Heading 5</li>
+                            <li>&lt;h6&gt; ใช้สำหรับ Heading 6</li>
+                        </ul>
+
+                        <br />
+                        <hr />
+                        <br />
+
+                        <h3>Example</h3>
+                        <p>
+                            เราสามารถใช้ Heading เพื่อแบ่งหัวข้อและจัดลำดับเนื้อหา ให้ Web
+                            Browser และผู้ใช้อ่านได้ง่ายขึ้น
+                        </p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+
+                            <div class="Extext">
+                                <p>&lt;h1&gt;My Website&lt;/h1&gt;</p>
+                                <p>&lt;h2&gt;About Me&lt;/h2&gt;</p>
+                                <p>&lt;h3&gt;My Skills&lt;/h3&gt;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box" id="04">
+                    <div class="section">
+                        <div class="point"></div>
+                        <p>SECTION 04</p>
+                    </div>
+
+                    <div class="heading">
+                        <h2>Paragraph</h2>
+                        <br />
+
+                        <h3>What is Paragraph?</h3>
+                        <p>
+                            Paragraph คือส่วนที่ใช้สำหรับแสดงข้อความหรือเนื้อหาเป็นย่อหน้า
+                            โดย HTML จะใช้ &lt;p&gt; Tag สำหรับสร้าง Paragraph
+                        </p>
+
+                        <br />
+                        <hr />
+                        <br />
+
+                        <h3>How to Create a Paragraph</h3>
+                        <p>
+                            เราสามารถสร้าง Paragraph ได้โดยใส่ข้อความไว้ระหว่าง Opening Tag
+                            และ Closing Tag ของ &lt;p&gt;
+                        </p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+
+                            <div class="Extext">
+                                <p>&lt;p&gt;Hello World!&lt;/p&gt;</p>
+                                <p>&lt;p&gt;Welcome to my website.&lt;/p&gt;</p>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <p>ในตัวอย่างนี้</p>
+                        </div>
+
+                        <ul>
+                            <li>&lt;p&gt; คือ Opening Tag</li>
+                            <li>Hello World! คือ Content</li>
+                            <li>&lt;/p&gt; คือ Closing Tag</li>
+                            <li>แต่ละ &lt;p&gt; จะใช้สำหรับสร้างข้อความหนึ่ง Paragraph</li>
+                        </ul>
+
+                        <br />
+                        <hr />
+                        <br />
+
+                        <h3>Multiple Paragraphs</h3>
+                        <p>
+                            เราสามารถสร้างหลาย Paragraph ในหน้าเว็บได้ โดยแต่ละ Paragraph
+                            จะถูกเขียนแยกออกจากกัน
+                        </p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+
+                            <div class="Extext">
+                                <p>&lt;p&gt;This is the first paragraph.&lt;/p&gt;</p>
+                                <p>&lt;p&gt;This is the second paragraph.&lt;/p&gt;</p>
+                            </div>
+                        </div>
+
+                        <p>
+                            การใช้ Paragraph ช่วยให้เนื้อหาบนเว็บไซต์เป็นระเบียบ
+                            และทำให้ผู้ใช้อ่านเนื้อหาได้ง่ายขึ้น
+                        </p>
+                    </div>
+                </div>
+                <div class="content-box" id="05">
+                    <div class="section">
+                        <div class="point"></div>
+                        <p>SECTION 05</p>
+                    </div>
+
+                    <div class="heading">
+                        <h2>Text Formatting</h2>
+                        <br />
+
+                        <h3>What is Text Formatting?</h3>
+                        <p>
+                            Text Formatting คือการจัดรูปแบบข้อความใน HTML
+                            เพื่อทำให้ข้อความมีลักษณะหรือความหมายที่แตกต่างกัน เช่น ตัวหนา
+                            ตัวเอียง ขีดเส้นใต้ หรือการเน้นข้อความ
+                        </p>
+
+                        <br />
+                        <hr />
+                        <br />
+
+                        <h3>Basic Text Formatting</h3>
+                        <p>
+                            HTML มี Tag หลายรูปแบบสำหรับจัดการข้อความ โดยแต่ละ Tag
+                            จะมีหน้าที่แตกต่างกัน
+                        </p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+
+                            <div class="Extext">
+                                <p>&lt;b&gt;Bold Text&lt;/b&gt;</p>
+                                <p>&lt;i&gt;Italic Text&lt;/i&gt;</p>
+                                <p>&lt;u&gt;Underline Text&lt;/u&gt;</p>
+                                <p>&lt;mark&gt;Highlighted Text&lt;/mark&gt;</p>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <p>ในตัวอย่างนี้</p>
+                        </div>
+
+                        <ul>
+                            <li>&lt;b&gt; ใช้สำหรับทำข้อความตัวหนา</li>
+                            <li>&lt;i&gt; ใช้สำหรับทำข้อความตัวเอียง</li>
+                            <li>&lt;u&gt; ใช้สำหรับขีดเส้นใต้ข้อความ</li>
+                            <li>&lt;mark&gt; ใช้สำหรับเน้นหรือ Highlight ข้อความ</li>
+                        </ul>
+
+                        <br />
+                        <hr />
+                        <br />
+
+                        <h3>Strong and Emphasized Text</h3>
+                        <p>
+                            นอกจากการจัดรูปแบบข้อความทั่วไปแล้ว HTML ยังมี &lt;strong&gt;
+                            และ &lt;em&gt; สำหรับเน้นความสำคัญของข้อความ
+                        </p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+
+                            <div class="Extext">
+                                <p>&lt;strong&gt;Important Text&lt;/strong&gt;</p>
+                                <p>&lt;em&gt;Emphasized Text&lt;/em&gt;</p>
+                            </div>
+                        </div>
+
+                        <p>
+                            การใช้ Text Formatting ช่วยให้เนื้อหาบนเว็บไซต์
+                            อ่านง่ายขึ้นและสามารถเน้นข้อความที่สำคัญให้ผู้ใช้สังเกตได้ง่าย
+                        </p>
+                    </div>
+                </div>
+                <div class="content-box" id="06">
+                    <div class="section">
+                        <div class="point"></div>
+                        <p>SECTION 06</p>
+                    </div>
+
+                    <div class="heading">
+                        <h2>Creating Links</h2>
+                        <br />
+
+                        <h3>What is a Link?</h3>
+                        <p>
+                            Link หรือ Hyperlink คือการสร้างลิงก์สำหรับเชื่อมโยงไปยังหน้าเว็บ
+                            ไฟล์ หรือส่วนต่าง ๆ ของหน้าเว็บ
+                        </p>
+                        <br />
+
+                        <p>
+                            HTML ใช้ <code>&lt;a&gt;</code> หรือ Anchor Tag สำหรับสร้างลิงก์
+                            โดยกำหนดปลายทางของลิงก์ผ่าน <code>href</code>
+                        </p>
+
+                        <p>ตัวอย่าง:</p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="Extext">
+                                <p>
+                                    &lt;a href="https://example.com"&gt;Visit Website&lt;/a&gt;
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <p>ในตัวอย่างนี้</p>
+                        </div>
+
+                        <ul>
+                            <li><code>&lt;a&gt;</code> ใช้สำหรับสร้าง Link</li>
+                            <li><code>href</code> ใช้กำหนด URL หรือปลายทางของ Link</li>
+                            <li>
+                                ข้อความที่อยู่ระหว่าง <code>&lt;a&gt;</code> และ
+                                <code>&lt;/a&gt;</code> คือข้อความที่ผู้ใช้มองเห็นและคลิกได้
+                            </li>
+                        </ul>
+
+                        <br />
+                        <hr />
+                        <br />
+
+                        <h3>href Attribute</h3>
+                        <p>
+                            <code>href</code> หรือ Hypertext Reference ใช้สำหรับกำหนด URL
+                            ของหน้าเว็บหรือไฟล์ที่ต้องการเชื่อมโยงไป
+                        </p>
+
+                        <p>ตัวอย่าง:</p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="Extext">
+                                <p>&lt;a href="about.html"&gt;About Us&lt;/a&gt;</p>
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <h3>target Attribute</h3>
+                        <p>
+                            <code>target</code> ใช้กำหนดว่า Link จะเปิดหน้าเว็บในตำแหน่งใด
+                            เช่น เปิดในหน้าต่างเดิม หรือเปิด Tab ใหม่
+                        </p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="Extext">
+                                <p>
+                                    &lt;a href="page.html" target="_self"&gt;Open Page&lt;/a&gt;
+                                </p>
+                                <p>
+                                    &lt;a href="page.html" target="_blank"&gt;Open New
+                                    Tab&lt;/a&gt;
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <p>ค่า target ที่ใช้บ่อย</p>
+                        </div>
+
+                        <ul>
+                            <li><code>_self</code> เปิดหน้าเว็บในหน้าต่างหรือ Tab เดิม</li>
+                            <li><code>_blank</code> เปิดหน้าเว็บในหน้าต่างหรือ Tab ใหม่</li>
+                            <li><code>_parent</code> เปิดหน้าเว็บใน Parent Frame</li>
+                            <li><code>_top</code> เปิดหน้าเว็บใน Full Body ของหน้าต่าง</li>
+                        </ul>
+
+                        <br />
+                        <hr />
+                        <br />
+
+                        <h3>Anchor Links</h3>
+                        <p>
+                            Anchor Link ใช้สำหรับสร้าง Link ที่สามารถพาผู้ใช้ไปยัง
+                            ส่วนใดส่วนหนึ่งของหน้าเว็บเดียวกัน
+                        </p>
+
+                        <p>
+                            สามารถใช้ <code>#</code> ร่วมกับ <code>id</code>
+                            เพื่อระบุตำแหน่งที่ต้องการให้ Link เลื่อนไปหา
+                        </p>
+
+                        <p>ตัวอย่าง:</p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="Extext">
+                                <p>&lt;a href="#section"&gt;Go to Section&lt;/a&gt;</p>
+                                <p>&lt;h3 id="section"&gt;This is the Section&lt;/h3&gt;</p>
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <h3>Email Links</h3>
+                        <p>
+                            สามารถสร้าง Link สำหรับเปิดโปรแกรม Email โดยใช้
+                            <code>mailto:</code> นำหน้าที่อยู่ Email
+                        </p>
+
+                        <p>ตัวอย่าง:</p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="Extext">
+                                <p>
+                                    &lt;a href="mailto:support@example.com"&gt;Email
+                                    Us&lt;/a&gt;
+                                </p>
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <h3>Download Links</h3>
+                        <p>
+                            สามารถสร้าง Link สำหรับดาวน์โหลดไฟล์ได้โดยใช้
+                            <code>download</code> Attribute
+                        </p>
+
+                        <p>ตัวอย่าง:</p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="Extext">
+                                <p>
+                                    &lt;a href="file.txt" download&gt;Download Text
+                                    File&lt;/a&gt;
+                                </p>
+                            </div>
+                        </div>
+
+                        <br />
+                        <hr />
+                        <br />
+
+                        <h3>สรุป</h3>
+                        <ul>
+                            <li><code>&lt;a&gt;</code> ใช้สำหรับสร้าง Link</li>
+                            <li><code>href</code> ใช้กำหนดปลายทางของ Link</li>
+                            <li><code>target</code> ใช้กำหนดตำแหน่งที่ Link จะเปิด</li>
+                            <li>
+                                <code>#</code> และ <code>id</code> ใช้สร้าง Anchor Link
+                                ภายในหน้าเว็บ
+                            </li>
+                            <li><code>mailto:</code> ใช้สร้าง Email Link</li>
+                            <li><code>download</code> ใช้สร้าง Download Link</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-box" id="07">
+                    <div class="section">
+                        <div class="point"></div>
+                        <p>SECTION 07</p>
+                    </div>
+
+                    <div class="heading">
+                        <h2>Lists (Ordered and Unordered)</h2>
+                        <br />
+
+                        <h3>What is a List?</h3>
+                        <p>
+                            List คือการจัดข้อมูลให้อยู่ในรูปแบบรายการ
+                            ซึ่ง HTML มี List หลัก ๆ อยู่ 2 ประเภท คือ
+                            Unordered List และ Ordered List
+                        </p>
+
+                        <br />
+
+                        <h3>Unordered List</h3>
+                        <p>
+                            Unordered List คือรายการที่ไม่มีลำดับตัวเลข
+                            โดยใช้ <code>&lt;ul&gt;</code> หรือ Unordered List
+                            และใช้ <code>&lt;li&gt;</code> สำหรับสร้างแต่ละรายการ
+                        </p>
+
+                        <p>ตัวอย่าง:</p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="Extext">
+                                <p>&lt;ul&gt;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Coffee&lt;/li&gt;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Tea&lt;/li&gt;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Milk&lt;/li&gt;</p>
+                                <p>&lt;/ul&gt;</p>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <p>ในตัวอย่างนี้</p>
+                        </div>
+
+                        <ul>
+                            <li><code>&lt;ul&gt;</code> ใช้สำหรับสร้าง Unordered List</li>
+                            <li><code>&lt;li&gt;</code> ใช้สำหรับสร้าง List Item</li>
+                            <li>รายการจะแสดงด้วยสัญลักษณ์หน้าข้อความ เช่น Bullet</li>
+                        </ul>
+
+                        <br />
+                        <hr />
+                        <br />
+
+                        <h3>Ordered List</h3>
+                        <p>
+                            Ordered List คือรายการที่มีลำดับ เช่น 1, 2, 3
+                            โดยใช้ <code>&lt;ol&gt;</code> หรือ Ordered List
+                            และใช้ <code>&lt;li&gt;</code> สำหรับสร้างแต่ละรายการ
+                        </p>
+
+                        <p>ตัวอย่าง:</p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="Extext">
+                                <p>&lt;ol&gt;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Coffee&lt;/li&gt;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Tea&lt;/li&gt;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Milk&lt;/li&gt;</p>
+                                <p>&lt;/ol&gt;</p>
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <h3>List Style Types</h3>
+                        <p>
+                            สามารถกำหนดรูปแบบของ List ได้โดยใช้
+                            <code>list-style-type</code> Property
+                        </p>
+
+                        <p>ตัวอย่างของ Unordered List:</p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="Extext">
+                                <p>&lt;ul style="list-style-type: disc;"&gt;</p>
+                                <p>&lt;ul style="list-style-type: circle;"&gt;</p>
+                                <p>&lt;ul style="list-style-type: square;"&gt;</p>
+                                <p>&lt;ul style="list-style-type: none;"&gt;</p>
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <p>ตัวอย่างของ Ordered List:</p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="Extext">
+                                <p>&lt;ol type="1"&gt;</p>
+                                <p>&lt;ol type="A"&gt;</p>
+                                <p>&lt;ol type="a"&gt;</p>
+                                <p>&lt;ol type="I"&gt;</p>
+                                <p>&lt;ol type="i"&gt;</p>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <p>รูปแบบของ Ordered List</p>
+                        </div>
+
+                        <ul>
+                            <li><code>1</code> ใช้ตัวเลข เช่น 1, 2, 3</li>
+                            <li><code>A</code> ใช้ตัวอักษรภาษาอังกฤษตัวพิมพ์ใหญ่</li>
+                            <li><code>a</code> ใช้ตัวอักษรภาษาอังกฤษตัวพิมพ์เล็ก</li>
+                            <li><code>I</code> ใช้เลขโรมันตัวพิมพ์ใหญ่</li>
+                            <li><code>i</code> ใช้เลขโรมันตัวพิมพ์เล็ก</li>
+                        </ul>
+
+                        <br />
+                        <hr />
+                        <br />
+
+                        <h3>สรุป</h3>
+                        <ul>
+                            <li><code>&lt;ul&gt;</code> ใช้สร้าง Unordered List</li>
+                            <li><code>&lt;ol&gt;</code> ใช้สร้าง Ordered List</li>
+                            <li><code>&lt;li&gt;</code> ใช้สร้าง List Item</li>
+                            <li><code>list-style-type</code> ใช้กำหนดรูปแบบของ List</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-box" id="08">
+                    <div class="section">
+                        <div class="point"></div>
+                        <p>SECTION 08</p>
+                    </div>
+
+                    <div class="heading">
+                        <h2>Adding Images</h2>
+                        <br />
+
+                        <h3>What is an Image?</h3>
+                        <p>
+                            Image คือรูปภาพที่สามารถนำมาแสดงบน Web Page ได้
+                            โดย HTML ใช้ <code>&lt;img&gt;</code> Tag
+                            สำหรับเพิ่มรูปภาพลงในหน้าเว็บ
+                        </p>
+
+                        <br />
+
+                        <p>
+                            การแสดงรูปภาพจำเป็นต้องกำหนดตำแหน่งของไฟล์ผ่าน
+                            <code>src</code> และสามารถกำหนดคำอธิบายรูปภาพผ่าน
+                            <code>alt</code> ได้
+                        </p>
+
+                        <p>ตัวอย่าง:</p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="Extext">
+                                <p>&lt;img src="image.jpg" alt="A description of the image"&gt;</p>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <p>ในตัวอย่างนี้</p>
+                        </div>
+
+                        <ul>
+                            <li><code>&lt;img&gt;</code> ใช้สำหรับแสดงรูปภาพ</li>
+                            <li><code>src</code> ใช้กำหนดตำแหน่งหรือ Path ของรูปภาพ</li>
+                            <li><code>alt</code> ใช้กำหนดข้อความอธิบายรูปภาพ</li>
+                        </ul>
+
+                        <br />
+                        <hr />
+                        <br />
+
+                        <h3>Image Size</h3>
+                        <p>
+                            สามารถกำหนดขนาดของรูปภาพได้โดยใช้
+                            <code>width</code> และ <code>height</code>
+                            Attribute
+                        </p>
+
+                        <p>ตัวอย่าง:</p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="Extext">
+                                <p>
+                                    &lt;img src="image.jpg" alt="Image" width="300" height="200"&gt;
+                                </p>
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <h3>Image Alignment</h3>
+                        <p>
+                            สามารถกำหนดตำแหน่งของรูปภาพได้โดยใช้
+                            <code>align</code> Attribute
+                        </p>
+
+                        <p>ตัวอย่าง:</p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="Extext">
+                                <p>&lt;img src="image.jpg" alt="Image" align="right"&gt;</p>
+                            </div>
+                        </div>
+
+                        <br />
+                        <hr />
+                        <br />
+
+                        <h3>Image Border</h3>
+                        <p>
+                            สามารถเพิ่มเส้นขอบให้กับรูปภาพได้โดยใช้
+                            <code>border</code> Attribute
+                        </p>
+
+                        <p>ตัวอย่าง:</p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="Extext">
+                                <p>
+                                    &lt;img src="image.jpg" alt="Image" border="2"&gt;
+                                </p>
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <h3>Image as a Link</h3>
+                        <p>
+                            สามารถทำให้รูปภาพสามารถคลิกเพื่อไปยังหน้าอื่นได้
+                            โดยนำ <code>&lt;img&gt;</code> ไปไว้ภายใน
+                            <code>&lt;a&gt;</code> Tag
+                        </p>
+
+                        <p>ตัวอย่าง:</p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="Extext">
+                                <p>&lt;a href="index.html"&gt;</p>
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="image.jpg" alt="Home"&gt;
+                                </p>
+                                <p>&lt;/a&gt;</p>
+                            </div>
+                        </div>
+
+                        <br />
+                        <hr />
+                        <br />
+
+                        <h3>Image Gallery</h3>
+                        <p>
+                            สามารถสร้าง Image Gallery
+                            โดยนำรูปภาพหลายรูปมาแสดงรวมกันภายในหน้าเว็บ
+                        </p>
+
+                        <p>ตัวอย่าง:</p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="Extext">
+                                <p>&lt;div class="gallery"&gt;</p>
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="image1.jpg" alt="Image 1"&gt;
+                                </p>
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="image2.jpg" alt="Image 2"&gt;
+                                </p>
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="image3.jpg" alt="Image 3"&gt;
+                                </p>
+                                <p>&lt;/div&gt;</p>
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <h3>Using Flexbox with Images</h3>
+                        <p>
+                            สามารถใช้ CSS Flexbox
+                            เพื่อจัดตำแหน่งรูปภาพหลายรูปให้อยู่ในรูปแบบที่ต้องการได้
+                        </p>
+
+                        <p>ตัวอย่าง:</p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="Extext">
+                                <p>.gallery {</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;display: flex;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;gap: 10px;</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <br />
+                        <hr />
+                        <br />
+
+                        <h3>สรุป</h3>
+                        <ul>
+                            <li><code>&lt;img&gt;</code> ใช้สำหรับแสดงรูปภาพ</li>
+                            <li><code>src</code> ใช้กำหนดตำแหน่งของรูปภาพ</li>
+                            <li><code>alt</code> ใช้กำหนดคำอธิบายรูปภาพ</li>
+                            <li><code>width</code> และ <code>height</code> ใช้กำหนดขนาดรูปภาพ</li>
+                            <li><code>align</code> ใช้กำหนดตำแหน่งของรูปภาพ</li>
+                            <li><code>border</code> ใช้กำหนดเส้นขอบของรูปภาพ</li>
+                            <li>สามารถใช้ Image ร่วมกับ Link และ CSS Flexbox ได้</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-box" id="09">
+                    <div class="section">
+                        <div class="point"></div>
+                        <p>SECTION 09</p>
+                    </div>
+
+                    <div class="heading">
+                        <h2>Creating Tables</h2>
+                        <br />
+
+                        <h3>What is an HTML Table?</h3>
+                        <p>
+                            HTML Table คือการจัดข้อมูลให้อยู่ในรูปแบบตาราง
+                            โดยสามารถแบ่งข้อมูลออกเป็นแถวและคอลัมน์
+                            เพื่อให้ข้อมูลสามารถอ่านและเปรียบเทียบได้ง่ายขึ้น
+                        </p>
+
+                        <br />
+
+                        <p>
+                            HTML ใช้ <code>&lt;table&gt;</code>,
+                            <code>&lt;tr&gt;</code>,
+                            <code>&lt;th&gt;</code> และ
+                            <code>&lt;td&gt;</code> Tag
+                            สำหรับสร้างและกำหนดโครงสร้างของตาราง
+                        </p>
+
+                        <p>ตัวอย่าง:</p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="Extext">
+                                <p>&lt;table&gt;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Name&lt;/th&gt;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Age&lt;/th&gt;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Tee&lt;/td&gt;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;19&lt;/td&gt;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</p>
+                                <p>&lt;/table&gt;</p>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <p>ในตัวอย่างนี้</p>
+                        </div>
+
+                        <ul>
+                            <li>
+                                <code>&lt;table&gt;</code> ใช้สำหรับสร้าง Table
+                            </li>
+                            <li>
+                                <code>&lt;tr&gt;</code> ใช้สำหรับสร้าง Table Row หรือแถวของตาราง
+                            </li>
+                            <li>
+                                <code>&lt;th&gt;</code> ใช้สำหรับสร้าง Table Header หรือหัวตาราง
+                            </li>
+                            <li>
+                                <code>&lt;td&gt;</code> ใช้สำหรับสร้าง Table Data หรือข้อมูลภายในเซลล์
+                            </li>
+                        </ul>
+
+                        <br />
+                        <hr />
+                        <br />
+
+                        <h3>Table Structure</h3>
+                        <p>
+                            โครงสร้างพื้นฐานของ HTML Table
+                            จะประกอบด้วย Table, Row, Header และ Data
+                            โดยสามารถนำแต่ละส่วนมาประกอบกันเพื่อสร้างตารางได้
+                        </p>
+
+                        <p>โครงสร้างหลัก:</p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="Extext">
+                                <p>&lt;table&gt;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header&lt;/th&gt;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data&lt;/td&gt;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</p>
+                                <p>&lt;/table&gt;</p>
+                            </div>
+                        </div>
+
+                        <br />
+                        <hr />
+                        <br />
+
+                        <h3>Table Tags</h3>
+                        <p>
+                            Tag ที่ใช้ในการสร้าง HTML Table มีหน้าที่แตกต่างกันดังนี้
+                        </p>
+
+                        <ul>
+                            <li>
+                                <code>&lt;table&gt;</code> : Table
+                            </li>
+                            <li>
+                                <code>&lt;tr&gt;</code> : Table Row
+                            </li>
+                            <li>
+                                <code>&lt;th&gt;</code> : Table Header
+                            </li>
+                            <li>
+                                <code>&lt;td&gt;</code> : Table Data / Cell
+                            </li>
+                        </ul>
+
+                        <br />
+                        <hr />
+                        <br />
+
+                        <h3>สรุป</h3>
+                        <ul>
+                            <li>
+                                <code>&lt;table&gt;</code> ใช้สร้างตาราง
+                            </li>
+                            <li>
+                                <code>&lt;tr&gt;</code> ใช้สร้างแถวของตาราง
+                            </li>
+                            <li>
+                                <code>&lt;th&gt;</code> ใช้สร้างหัวตาราง
+                            </li>
+                            <li>
+                                <code>&lt;td&gt;</code> ใช้สร้างข้อมูลหรือเซลล์ในตาราง
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-box" id="10">
+                    <div class="section">
+                        <div class="point"></div>
+                        <p>SECTION 10</p>
+                    </div>
+
+                    <div class="heading">
+                        <h2>HTML Forms</h2>
+                        <br />
+
+                        <h3>What is an HTML Form?</h3>
+                        <p>
+                            HTML Form คือส่วนที่ใช้สำหรับรับข้อมูลจากผู้ใช้
+                            เช่น ชื่อ รหัสผ่าน Email ตัวเลข วันที่ หรือไฟล์
+                            แล้วสามารถส่งข้อมูลไปยัง Server เพื่อประมวลผลต่อได้
+                        </p>
+
+                        <br />
+
+                        <p>
+                            HTML Forms ถูกสร้างขึ้นด้วย
+                            <code>&lt;form&gt;</code> Tag
+                            ซึ่งใช้เป็นตัวครอบข้อมูลทั้งหมดที่อยู่ภายใน Form
+                        </p>
+
+                        <p>ตัวอย่าง:</p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="Extext">
+                                <p>&lt;form action="/submit" method="post"&gt;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text"&gt;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit"&gt;</p>
+                                <p>&lt;/form&gt;</p>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <p>ในตัวอย่างนี้</p>
+                        </div>
+
+                        <ul>
+                            <li><code>&lt;form&gt;</code> ใช้เป็นตัวครอบข้อมูลใน Form</li>
+                            <li><code>action</code> ใช้กำหนดปลายทางที่จะส่งข้อมูล</li>
+                            <li><code>method</code> ใช้กำหนดวิธีการส่งข้อมูล เช่น GET หรือ POST</li>
+                        </ul>
+
+                        <br />
+                        <hr />
+                        <br />
+
+                        <h3>Form Structure</h3>
+                        <p>
+                            โครงสร้างพื้นฐานของ Form ประกอบด้วย
+                            <code>&lt;form&gt;</code>, <code>action</code>
+                            และ <code>method</code>
+                        </p>
+
+                        <p>ตัวอย่าง:</p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="Extext">
+                                <p>&lt;form action="/submit" method="post"&gt;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;Form Data</p>
+                                <p>&lt;/form&gt;</p>
+                            </div>
+                        </div>
+
+                        <br />
+                        <hr />
+                        <br />
+
+                        <h3>Input Types</h3>
+                        <p>
+                            <code>&lt;input&gt;</code> สามารถกำหนดชนิดของข้อมูลที่ต้องการรับได้หลายรูปแบบ
+                            เช่น Text, Password, Email, Number, Radio, Checkbox, Date และ File
+                        </p>
+
+                        <p>ตัวอย่าง:</p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="Extext">
+                                <p>&lt;input type="text"&gt;</p>
+                                <p>&lt;input type="password"&gt;</p>
+                                <p>&lt;input type="email"&gt;</p>
+                                <p>&lt;input type="number"&gt;</p>
+                                <p>&lt;input type="radio"&gt;</p>
+                                <p>&lt;input type="checkbox"&gt;</p>
+                                <p>&lt;input type="date"&gt;</p>
+                                <p>&lt;input type="file"&gt;</p>
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <h3>Other Form Elements</h3>
+                        <p>
+                            นอกจาก <code>&lt;input&gt;</code> แล้ว HTML ยังมี Element
+                            อื่น ๆ สำหรับรับข้อมูลจากผู้ใช้
+                        </p>
+
+                        <ul>
+                            <li>
+                                <code>&lt;textarea&gt;</code> ใช้สร้างช่องสำหรับกรอกข้อความขนาดใหญ่
+                            </li>
+                            <li>
+                                <code>&lt;select&gt;</code> และ <code>&lt;option&gt;</code>
+                                ใช้สร้างเมนูแบบเลื่อนลง
+                            </li>
+                            <li>
+                                <code>&lt;datalist&gt;</code> ใช้สร้างรายการตัวเลือกที่กำหนดไว้ล่วงหน้า
+                            </li>
+                            <li>
+                                <code>&lt;optgroup&gt;</code> ใช้จัดกลุ่มตัวเลือก
+                            </li>
+                            <li>
+                                <code>&lt;fieldset&gt;</code> และ <code>&lt;legend&gt;</code>
+                                ใช้จัดกลุ่มข้อมูลที่เกี่ยวข้องกัน
+                            </li>
+                        </ul>
+
+                        <br />
+                        <hr />
+                        <br />
+
+                        <h3>Form Buttons</h3>
+                        <p>
+                            HTML มีปุ่มหลายประเภทสำหรับใช้งานภายใน Form
+                            เช่น ปุ่มส่งข้อมูล ปุ่มล้างข้อมูล และปุ่มทั่วไป
+                        </p>
+
+                        <p>ตัวอย่าง:</p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="Extext">
+                                <p>&lt;button&gt;Submit&lt;/button&gt;</p>
+                                <p>&lt;input type="submit"&gt;</p>
+                                <p>&lt;input type="reset"&gt;</p>
+                                <p>&lt;input type="button"&gt;</p>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <p>ประเภทของปุ่ม</p>
+                        </div>
+
+                        <ul>
+                            <li><code>&lt;button&gt;</code> ใช้สร้างปุ่มทั่วไป</li>
+                            <li><code>submit</code> ใช้สำหรับส่งข้อมูลใน Form</li>
+                            <li><code>reset</code> ใช้สำหรับล้างข้อมูลใน Form</li>
+                            <li><code>button</code> ใช้สร้างปุ่มทั่วไป</li>
+                            <li><code>image</code> ใช้สร้างปุ่มที่เป็นรูปภาพ</li>
+                            <li><code>file</code> ใช้สร้างปุ่มสำหรับอัปโหลดไฟล์</li>
+                        </ul>
+
+                        <br />
+                        <hr />
+                        <br />
+
+                        <h3>Form Validation</h3>
+                        <p>
+                            Form Validation คือการตรวจสอบข้อมูลที่ผู้ใช้กรอก
+                            ก่อนที่จะส่งข้อมูลไปยัง Server
+                        </p>
+
+                        <p>
+                            HTML มี Attribute ที่ช่วยตรวจสอบข้อมูล เช่น
+                            <code>required</code>, <code>min</code>,
+                            <code>max</code> และ <code>pattern</code>
+                        </p>
+
+                        <p>ตัวอย่าง:</p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="Extext">
+                                <p>&lt;input type="text" required&gt;</p>
+                                <p>&lt;input type="number" min="1" max="100"&gt;</p>
+                                <p>&lt;input type="text" pattern="[A-Za-z]+"&gt;</p>
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <h3>HTML5 Form Features</h3>
+                        <p>
+                            HTML5 เพิ่ม Attribute ที่ช่วยให้การสร้าง Form
+                            สะดวกและใช้งานง่ายมากขึ้น
+                        </p>
+
+                        <ul>
+                            <li>
+                                <code>placeholder</code> ใช้แสดงข้อความแนะนำภายใน Input
+                            </li>
+                            <li>
+                                <code>autofocus</code> ใช้กำหนดให้ Input ถูกเลือกโดยอัตโนมัติเมื่อเปิดหน้าเว็บ
+                            </li>
+                            <li>
+                                สามารถใช้ JavaScript เพื่อช่วยตรวจสอบข้อมูลภายใน Form ได้
+                            </li>
+                        </ul>
+
+                        <br />
+                        <hr />
+                        <br />
+
+                        <h3>Form Submission</h3>
+                        <p>
+                            เมื่อผู้ใช้กรอกข้อมูลเสร็จแล้ว Form สามารถส่งข้อมูลไปยัง Server
+                            เพื่อประมวลผลต่อได้ โดยสามารถใช้ JavaScript
+                            เช่น <code>onsubmit</code> เพื่อจัดการเหตุการณ์ตอนส่ง Form
+                        </p>
+
+                        <p>ตัวอย่าง:</p>
+
+                        <div class="code-text">
+                            <div class="button-tap">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="Extext">
+                                <p>&lt;form onsubmit="return validateForm()"&gt;</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;Form Data</p>
+                                <p>&lt;/form&gt;</p>
+                            </div>
+                        </div>
+
+                        <br />
+                        <hr />
+                        <br />
+
+                        <h3>สรุป</h3>
+                        <ul>
+                            <li><code>&lt;form&gt;</code> ใช้สร้าง Form สำหรับรับข้อมูล</li>
+                            <li><code>action</code> และ <code>method</code> ใช้กำหนดการส่งข้อมูล</li>
+                            <li><code>&lt;input&gt;</code> ใช้รับข้อมูลหลายประเภท</li>
+                            <li><code>&lt;textarea&gt;</code> ใช้รับข้อความขนาดใหญ่</li>
+                            <li><code>&lt;select&gt;</code> และ <code>&lt;option&gt;</code> ใช้สร้าง Dropdown</li>
+                            <li><code>required</code>, <code>min</code>, <code>max</code> และ <code>pattern</code>
+                                ใช้สำหรับ Validation</li>
+                            <li>สามารถใช้ JavaScript เพื่อจัดการและตรวจสอบ Form ได้</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<!-- saved from url=(0084)file:///Users/teerapatkaewprasert/Desktop/Html/Web1-684259041/W06-01-link-image.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link and Image</title>
+    <link rel="stylesheet" href="./Link and Image_files/W06-01-link-image.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Link and Image_files/css2" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="site-header">
+        <!-- Brand -->
+        <div class="brand">
+          <div class="brand-logo">🐬</div>
+          <div class="brand-text">
+            <h2>เรียนรู้เว็บเบื้องต้น</h2>
+            <p>Web Development Basics</p>
+          </div>
+        </div>
+        <!-- Nav -->
+        <div class="main-nav">
+          <ul class="nav-list">
+            <li><a href="file:///Users/teerapatkaewprasert/Desktop/Html/Web1-684259041/index.html">🐘 Home</a></li>
+            <li><a href="file:///Users/teerapatkaewprasert/Desktop/Html/Web1-684259041/W03-02-heading.html">🐔 Heading</a></li>
+            <li><a href="file:///Users/teerapatkaewprasert/Desktop/Html/Web1-684259041/FormattingW05.html">🦈 Formatting</a></li>
+            <li><a href="file:///Users/teerapatkaewprasert/Desktop/Html/Web1-684259041/W06-01-link-image.html#">🦨 Link</a></li>
+            <li><a href="file:///Users/teerapatkaewprasert/Desktop/Html/Web1-684259041/W06-01-link-image.html#">🐍 Practice</a></li>
+          </ul>
+        </div>
+      </header>
+      <main class="main-layout">
+        <section class="left-content">
+          <!-- hero -------------->
+          <section class="hero">
+            <div class="hero-text">
+              <h1>แบบฝึกปฏิบัติ: HTML Link และ Image</h1>
+              <p>เรียนรู้การสร้างลิ้งและการแทรกรูปภาพด้วยแท็ก HTML</p>
+              <p>พร้อมตัวอย่างและการตกแต่งด้วย CSS</p>
+            </div>
+
+            <div class="hero-img">
+              <div class="img-menu">
+                <div class="red"></div>
+                <div class="yellow"></div>
+                <div class="green"></div>
+              </div>
+              <img src="./Link and Image_files/Dolfin.jpg" alt="Dolfin" width="400" height="200">
+            </div>
+          </section>
+
+          <!-- Link -------------->
+          <section class="link">
+            <h2>⛓️‍💥 ตัวอย่างลิงค์ (Link Examples)</h2>
+            <div class="content">
+              <div class="result-box">
+                <div class="rb-header">
+                  <h2>ผลลัพธ์</h2>
+                </div>
+
+                <div class="rb-text">
+                  <br>
+                  <a href="https://www.npru.ac.th/">ไปยังเว็บไซต์มหาวิทยาลัย</a>
+                  <br>
+                  <a href="https://www.google.com/" target="_blank">ไปยัง Google ในแท็บใหม่</a>
+                  <br>
+
+                  <div class="mail">
+                    <div class="_mail">✉</div>
+                    <a href="file:///Users/teerapatkaewprasert/Desktop/Html/Web1-684259041/W06-01-link-image.html">ส่งอีเมลถึงผู้สอน</a>
+                  </div>
+
+                  <div class="B-back">
+                    <a href="file:///Users/teerapatkaewprasert/Desktop/Html/Web1-684259041/index.html"> ← กลับไปยังหน้าแรก </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="c-box">
+                <div class="c-header">
+                  <h2>โค้ด HTML</h2>
+                </div>
+                <div class="code-html">
+                  <div class="code-line">
+                    <span class="line-number">1</span>
+                    <span class="tag">&lt;a</span>
+                    <span class="attr">&nbsp;href</span>
+                    <span>=</span>
+                    <span class="string">"https://www.npru.ac.th"</span>
+                    <span class="tag">&gt;</span>ไปยังเว็บไซต์มหาวิทยาลัย
+                    <span class="tag">&lt;/a&gt;</span>
+                  </div>
+
+                  <div class="code-line">
+                    <span class="line-number">2</span>
+                    <span class="tag">&lt;a</span>
+                    <span class="attr">&nbsp;href</span>
+                    <span>=</span>
+                    <span class="string">"https://www.google.com"</span>
+                    <span class="attr">target</span>
+                    <span>=</span>
+                    <span class="string">"_blank"</span>
+                    <span class="tag">&gt;</span>
+                    <span>ไปยัง Google ในแท็บใหม่</span>
+                    <span class="tag">&lt;/a&gt;</span>
+                  </div>
+
+                  <div class="code-line">
+                    <span class="line-number">3</span>
+                    <span class="tag">&lt;a</span>
+                    <span class="attr">&nbsp;href</span>=<span class="string">"mailto:teacher@example.com"</span><span class="tag">&gt;</span>ส่งอีเมลถึงผู้สอน<span class="tag">&lt;/a&gt;</span>
+                  </div>
+
+                  <div class="code-line">
+                    <span class="line-number">4</span>
+                    <span class="tag">&lt;a</span>
+                    <span class="attr">&nbsp;href</span>=<span class="string">"index.html"</span><span class="tag">&gt;</span>กลับไปยังหน้าแรก<span class="tag">&lt;/a&gt;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Image ------------->
+          <article class="card">
+            <h2>🌆 ตัวอย่างรูปภาพ (Image Examples)</h2>
+            <div class="content">
+              <div style="margin-top: 20px">
+                <h2 class="Hheader">ผลลัพธ์</h2>
+                <div class="image-content">
+                  <div class="box-image">
+                    <div class="image">
+                      <img src="file:///Users/teerapatkaewprasert/Desktop/Html/Web1-684259041/W06-01-link-image.html" alt="ปลาสิงโต" width="100" height="100">
+                      <p>ปลาสิงโต</p>
+                    </div>
+
+                    <div class="image">
+                      <img src="file:///Users/teerapatkaewprasert/Desktop/Html/Web1-684259041/W06-01-link-image.html" alt="ปลาดาว" width="100" height="100">
+                      <p>ปลาดาว</p>
+                    </div>
+
+                    <div class="image">
+                      <img src="file:///Users/teerapatkaewprasert/Desktop/Html/Web1-684259041/W06-01-link-image.html" alt="ปลาฉลาม" width="100" height="100">
+                      <p>ปลาฉลาม</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ci-box">
+                <h2 class="Hheader" style="width: 600px">โค้ด HTML</h2>
+                <div class="code-html">
+                  <div class="code-line">
+                    <span class="line-number">1</span>
+                    <span class="tag">&lt;img</span>
+                    <span class="attr">&nbsp;src</span>
+                    <span>=</span>
+                    <span class="string">""</span>
+                    <span class="attr">&nbsp;alt</span>
+                    <span>=</span>
+                    <span class="string">"ปลามสิงโต"</span>
+                    <span class="attr">&nbsp;width</span>
+                    <span>=</span>
+                    <span class="string">"100"</span>
+                    <span class="attr">&nbsp;hight</span>
+                    <span>=</span>
+                    <span class="string">"100"</span>
+                  </div>
+
+                  <div class="code-line">
+                    <span class="line-number">2</span>
+                    <span class="tag">&lt;img</span>
+                    <span class="attr">&nbsp;src</span>
+                    <span>=</span>
+                    <span class="string">""</span>
+                    <span class="attr">&nbsp;alt</span>
+                    <span>=</span>
+                    <span class="string">"ปลามดาว"</span>
+                    <span class="attr">&nbsp;width</span>
+                    <span>=</span>
+                    <span class="string">"100"</span>
+                    <span class="attr">&nbsp;hight</span>
+                    <span>=</span>
+                    <span class="string">"100"</span>
+                  </div>
+
+                  <div class="code-line">
+                    <span class="line-number">3</span>
+                    <span class="tag">&lt;img</span>
+                    <span class="attr">&nbsp;src</span>
+                    <span>=</span>
+                    <span class="string">""</span>
+                    <span class="attr">&nbsp;alt</span>
+                    <span>=</span>
+                    <span class="string">"ปลาฉลาม"</span>
+                    <span class="attr">&nbsp;width</span>
+                    <span>=</span>
+                    <span class="string">"100"</span>
+                    <span class="attr">&nbsp;hight</span>
+                    <span>=</span>
+                    <span class="string">"100"</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="right-sidebar">
+          <div class="side-card">
+            <h2>🎯 จุดประสงค์การเรียนรู้</h2>
+            <div class="card-content">
+              <span class="number">1</span>
+              <p>
+                อธิบายการใช้งานแท็ก &lt;a&gt; เพื่อสร้างลิงก์ไปยังหน้า <br>
+                เว็บหรือแหล่งต่างๆ
+              </p>
+            </div>
+
+            <div class="card-content">
+              <span class="number">2</span>
+              <p>
+                การแทรกรูปภาพด้วยแท็ก &lt;img&gt; พร้อมกำหนดคุณสมบัติ <br>
+                พื้นฐาน
+              </p>
+            </div>
+
+            <div class="card-content">
+              <span class="number">3</span>
+              <p>
+                ตกแต่งลิงก์และรูปภาพด้วย CSS เพื่อความสวยงามและ<br>น่าใช้งาน
+              </p>
+            </div>
+          </div>
+
+          <div class="side-card">
+            <h2>🏷️ แท็กที่ใช้บ่อย</h2>
+            <div class="tag-box">
+              <span class="tag-a">
+                <p>&lt;a&gt;</p>
+              </span>
+              <span class="tag-href">
+                <p>href</p>
+              </span>
+              <span class="tag-target">
+                <p>target</p>
+              </span>
+              <span class="tag-img">
+                <p>&lt;img&gt;</p>
+              </span>
+            </div>
+            <div class="tag-box">
+              <span class="tag-src">
+                <p>src</p>
+              </span>
+              <span class="tag-alt">
+                <p>alt</p>
+              </span>
+              <span class="tag-width">
+                <p>width</p>
+              </span>
+              <span class="tag-height">
+                <p>height</p>
+              </span>
+            </div>
+          </div>
+
+          <div class="side-card">
+            <h2>&nbsp;🗒️ กิจกรรมฝึกปฏิบัติ</h2>
+            <br>
+            <div class="list-text">
+              <div class="card-content">
+                <span class="number">1</span>
+                <p>สร้างลิ้งค์อย่างน้อย 3 แบบ</p>
+              </div>
+              <div class="card-content">
+                <span class="number">2</span>
+                <p>แทรกรูปภาพอย่างน้อย 2 รูป</p>
+              </div>
+              <div class="card-content">
+                <span class="number">3</span>
+                <p>ใส่ alt ให้กับทุกรูปภาพ</p>
+              </div>
+              <div class="card-content">
+                <span class="number">4</span>
+                <p>ใส่ css เปลื่ยนสีลิงค์ทุก hover</p>
+              </div>
+              <div class="card-content">
+                <span class="number">5</span>
+                <p>ตกแต่งภาพด้วย border-radius หรือ box-shadow</p>
+              </div>
+              <div class="card-content">
+                <span class="number">6</span>
+                <p>บันทึกชื่อไฟล์ "link-html.html"</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="submit-card">
+            <div class="airplan">
+              <h1>✈️</h1>
+            </div>
+            <div class="send-box">
+              <h2>สิ่งที่ต้องส่ง</h2>
+              <p>ส่งไฟล์ html พร้อมไฟล์และรูปภาพ</p>
+              <h1>-----&gt;</h1>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="tip-box">
+        <div class="icon">i</div>
+
+        <div class="tip-content">
+          <h2>เกร็ดความรู้</h2>
+          <p>
+            แท็ก <span>&lt;a&gt;</span> ใช้สำหรับสร้างลิงก์ (Hyperlink)
+            เพื่อเชื่อมโยงไปยังหน้าเว็บ ไฟล์ หรือที่อยู่อีเมลต่าง ๆ
+            โดยใช้แอตทริบิวต์ <span>href</span> ระบุปลายทางของลิงก์ แท็ก
+            <span>&lt;img&gt;</span> ใช้สำหรับแทรกรูปภาพ โดยใช้แอตทริบิวต์
+            <span>src</span> ระบุแหล่งที่อยู่ของไฟล์รูปภาพ และ
+            <span>alt</span> ระบุข้อความอธิบายรูปภาพ ซึ่งสำคัญต่อการเข้าถึงได้
+            (Accessibility) และช่วยแสดงข้อความเมื่อไม่สามารถโหลดรูปได้ • CSS
+            สามารถใช้ตกแต่งลิงก์ด้วย <span>link color</span>, เอฟเฟกต์เมื่อ
+            <span>hover</span>, ขนาดของรูปภาพ, ขอบ (<span>border</span>),
+            มุมโค้ง (<span>border-radius</span>) และเงา
+            (<span>box-shadow</span>)
+            เพื่อให้หน้าเว็บสวยงามและน่าใช้งานมากยิ่งขึ้น
+          </p>
+        </div>
+        <div class="emoji">
+          💡<br>
+          📚
+        </div>
+      </footer>
+    </div>
+  
+
+</body></html>

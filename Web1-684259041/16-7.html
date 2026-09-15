@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatting</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ebf8ff;
+    
+    line-height: 1.6;
+}
+
+footer,
+/* .hero, */
+/* .card, */
+.tip-box {
+    border: 1px solid #ff0000;
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* ================================
+              Header
+=================================== */
+header {
+    background: linear-gradient(to right, #0036aa, #325bfc);
+    padding: 20px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-icon { font-size: 50px; }
+.brand-text p { font-size: 14px}
+
+/* navigation */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* hero section */
+.hero {
+    display: flex;
+    gap: 10px;
+
+    padding: 40px;
+}
+
+.hero-icon {
+    background-color: #325bfc;
+    color: #fff;
+    border-radius: 15px;
+
+    width: 90px;
+    height: 90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 40px;
+    font-weight: bold;
+
+    
+
+}
+
+.hero-text {}
+
+.hero-text h1 {
+    font-size: 40px;
+    color: #1a2d78;
+}
+
+.hero-text p {
+    font-size: 20px;
+    color: #474748;
+}
+
+
+/* Main content */
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #b5fd76;
+}
+
+
+.card-grid {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    /* background-color: #fffb2c; */
+}
+
+.card {
+    background-color: #fff;
+
+    border-radius: 16px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.11);
+    border: 1px solid rgb(127, 134, 205);
+    overflow: hidden;
+
+}
+
+.card-header{
+    background-color: black;
+    height: 50px;
+}
+
+.card-body{
+    gap: 25px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.card-body span {
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    
+}
+
+.card-body div{
+    margin-top: 20px;
+}
+
+.B{background-color: #0036aa;}
+.STRONG{background-color: #aa0000;}
+.I{background-color: #00ff15;}
+.EM{background-color: #00b7ff;}
+.U{background-color: #d400ff;}
+.MARK{background-color: #b700ff;}
+.SMALL{background-color: #ff5e00;}
+.DEL{background-color: #fffb00;}
+.SUP{background-color: #ff009d;}
+.SUB{background-color: #ff0037;}
+
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="brand">
+            <div class="brand-icon">🧣</div>
+            <div class="brand-text">
+                <h2>เรียนรู้เว็บเบื้องต้น</h2>
+                <p>Basic Web Development</p>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="W03-02-heading-51.html">Heading</a>
+            <a href="W04-01-formating.html">Formatting</a>
+            <a href="#">Links</a>
+
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+
+
+        <div class="hero-icon">&lt;/&gt;</div>
+
+        <div class="hero-text">
+            <h1>แบบฝึกปฏิบัติ: HTML Formatting</h1>
+            <p>
+                เรียนรู้การจัดรูปแบบข้อความด้วยแท็ก HTML
+                พร้อมตัวอย่างและการตกแต่งด้วย CSS
+            </p>
+        </div>
+
+
+
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="card-grid">
+            <!-- card 1 -->
+            <div class="card">
+                <div class="card-header">
+                    <span>🖥</span> ตัวอย่างผลลัพธ์
+                </div>
+                <div class="card-body">
+
+                    <div>
+                        <span class="B">B:</span>
+                        <b>ข้อความตัวหนา</b>
+                    </div>
+
+                    <div>
+                        <span class="STRONG">STRONG:</span>
+                        <strong>ข้อความสำคัญ</strong>
+                    </div>
+                    <div>
+                        <span class="I">I:</span>
+                        <i>ข้อความตัวเอียง</i>
+                    </div>
+
+                    <div>
+                        <span class="EM">EM:</span>
+                        <em>ข้อความเน้นเสียง</em>
+                    </div>
+
+                    <div>
+                        <span class="U">U:</span>
+                        <u>ข้อความขีดเส้นใต้</u>
+                    </div>
+
+                    <div>
+                        <span class="MARK">MARK:</span>
+                        <mark>ข้อความที่ถูกเน้น</mark>
+                    </div>
+
+                    <div>
+                        <span class="SMALL">SMALL:</span>
+                        <small>ข้อความขนาดเล็ก</small>
+                    </div>
+
+                    <div>
+                        <span class="DEL">DEL:</span>
+                        <del>ข้อความที่ถูกลบ</del>
+                    </div>
+
+                    <div>
+                        <span class="SUP">SUP:</span>
+                        <span>x<sup>2</sup></span>
+                    </div>
+
+                    <div>
+                        <span class="SUB">SUB:</span>
+                        <span>H<sub>2</sub>O</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- card 2 -->
+            <div class="card">
+
+                <span>&lt;/&gt;</span>
+                ตัวอย่างโค้ด HTML
+
+                <pre><span>1</span><span>&lt;b&gt;</span><span>ข้อความตัวหนา</span><span>&lt;/b&gt;</span>
+                    <span>2</span><span>&lt;strong&gt;</span><span>ข้อความสำคัญ</span><span>&lt;/strong&gt;</span>
+                    <span>3</span><span>&lt;i&gt;</span><span>ข้อความตัวเอียง</span><span>&lt;/i&gt;</span>
+                    <span>4</span><span>&lt;em&gt;</span><span>ข้อความเน้นเสียง</span><span>&lt;/em&gt;</span>
+                    <span>5</span><span>&lt;u&gt;</span><span>ข้อความขีดเส้นใต้</span><span>&lt;/u&gt;</span>
+                    <span>6</span><span>&lt;mark&gt;</span><span>ข้อความที่ถูกเน้น</span><span>&lt;/mark&gt;</span>
+                    <span>7</span><span>&lt;small&gt;</span><span>ข้อความขนาดเล็ก</span><span>&lt;/small&gt;</span>
+                    <span>8</span><span>&lt;del&gt;</span><span>ข้อความที่ถูกลบ</span><span>&lt;/del&gt;</span>
+                    <span>9</span><span>x</span><span>&lt;sup&gt;</span><span>2</span><span>&lt;/sup&gt;</span>
+                    <span>10</span><span>H</span><span>&lt;sub&gt;</span><span>2</span><span>&lt;/sub&gt;</span><span>O</span>
+                </pre>
+
+
+
+            </div>
+
+            <!-- card 3 -->
+            <div class="card">
+
+
+                <span>🎯</span>
+
+                กิจกรรมฝึกปฏิบัติ
+
+
+                <ul class="">
+                    <li>
+                        <span>✓</span>
+                        <span>ให้นักศึกษาสร้างหน้าเว็บ 1 หน้า</span>
+                    </li>
+
+                    <li>
+                        <span>✓</span>
+                        <span>ใช้แท็ก formatting อย่างน้อย 6 รูปแบบ</span>
+                    </li>
+
+                    <li>
+                        <span >✓</span>
+                        <span>
+                            ทดลองเปรียบเทียบ
+                            <span>&lt;b&gt;</span> กับ
+                            <span>&lt;strong&gt;</span>
+                            และ
+                            <span>&lt;i&gt;</span> กับ
+                            <span>&lt;em&gt;</span>
+                        </span>
+                    </li>
+
+                    <li>
+                        <span>✓</span>
+                        <span>ปรับสี ขนาด และพื้นหลังบางข้อความด้วย CSS</span>
+                    </li>
+
+                    <li>
+                        <span>✓</span>
+                        <span>
+                            บันทึกไฟล์ชื่อ
+                            <span>formatting.html</span>
+                        </span>
+                    </li>
+                </ul>
+
+
+
+            </div>
+        </div>
+
+        <div class="tip-box">
+
+
+
+            <h2>เกร็ดความรู้</h2>
+
+            <p>
+                แท็กจัดรูปแบบข้อความช่วยให้เนื้อหาสื่อสารชัดเจนและมีความหมายมากขึ้น
+                เช่น <span >&lt;strong&gt;</span> ใช้สำหรับข้อความสำคัญ
+                <span>&lt;em&gt;</span> ใช้เน้นความสำคัญหรืออารมณ์
+                และ <span>&lt;mark&gt;</span> ใช้เน้นข้อความที่ต้องการให้โดดเด่น
+                แท็กเหล่านี้ช่วยเพิ่มความอ่านง่ายและช่วยจัดระเบียบเนื้อหาให้ผู้ใช้งานเข้าใจได้ง่ายขึ้น
+            </p>
+
+
+
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>Copyright © 2026 Suksawat Saelim. All rights reserved.</footer>
+<
