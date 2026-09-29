@@ -1,0 +1,420 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+
+  background: linear-gradient(
+    135deg,
+    rgb(230, 227, 227) 0%,
+    #ffffff 50%,
+    rgb(79, 128, 128) 100%
+  );
+}
+
+.container {
+  width: 1320px;
+  margin: 0 auto;
+}
+
+:root {
+  /* สีหลักของเว็บ */
+  --primary-color: blue;
+  --primary-dark-color: rgb(255, 255, 255);
+  --secondary-color: rgb(214, 7, 255);
+
+  /* สีข้อความ */
+  --text-color: black;
+  --text-button:rgb(2, 12, 14);
+  --text-color-p: rgb(95, 95, 95);
+  --text-nav: rgb(36, 34, 34);
+  --text-white: white;
+  --text-cyn:rgb(85, 185, 172);
+  --text-bluecyn:rgb(60, 131, 172);
+  --mute-text:rgb(178, 224, 228);
+
+  /* สีพื้น */
+  --btn-bg-color: rgb(167, 38, 167);
+  --footer-bg-color: black;
+  --header-color:rgb(113, 238, 232);
+
+
+  /* สีเงา */
+  --header-shadow: 0 0 15px rgba(2, 5, 8, 0.3);
+  --card-shadow: 0 3px 10px rgb(18, 37, 248);
+
+  /* สีขอบ */
+  --border-color: rgb(255, 253, 253);
+  --border-f:rgb(229, 236, 236);
+  --border-reset:rgb(91, 152, 161);
+}
+
+/* =========================
+            Header
+============================*/
+.header {
+  background-color: var(--primary-dark-color);
+  box-shadow: var(--header-shadow);
+
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  background-color: rgba(100, 233, 233, 0.322);
+  backdrop-filter: blur(10px);
+}
+
+.header-content {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 120px;
+
+  gap: 15px;
+
+  /* padding: 40px 5px;
+    padding-block: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem; */
+}
+.header-content p {
+  color: var(--text-color-p);
+}
+
+.header-title {
+  color: var(--primary-color);
+
+  font-size: clamp(2rem, 5vw, 3rem);
+
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
+}
+
+/* =========================
+            Nav
+============================*/
+.category-nav  {
+  padding-block: 2rem;
+  text-align: center;
+}
+
+.category-nav label{
+  text-decoration: none;
+  color: var(--text-nav);
+  background-color: var(--border-color);
+
+  padding: 0.65rem 1.2rem;
+  box-shadow: var(--header-shadow);
+  border-radius: 999px;
+
+  margin-right: 0.5rem;
+  transition: transform 0.5s;
+
+  display: inline-block;
+  cursor: pointer;
+}
+
+.category-nav label:hover {
+  transform: translateY(-10px);
+  background-color: var(--secondary-color);
+  color: var(--text-white);
+}
+
+.filter-radio{
+ /* display: none; */
+ position: absolute;
+ width: 1px;
+ height: 1px;
+ overflow: hidden;
+ clip-path: inset(50%);
+}
+
+#filter-all:checked ~ .category-nav label[for="filter-all"],
+#filter-dog:checked ~ .category-nav label[for="filter-dog"],
+#filter-cat:checked ~ .category-nav label[for="filter-cat"],
+#filter-bird:checked ~ .category-nav label[for="filter-bird"],
+#filter-fish:checked ~ .category-nav label[for="filter-fish"],
+#filter-small-pet:checked ~ .category-nav label[for="filter-small-pet"] {
+  background-color: var(--secondary-color);
+  color: var(--text-white);
+}
+
+.category-hide {
+  display: none;
+}
+
+#filter-all:checked ~ main .show-all,
+#filter-dog:checked ~ main .show-dog,
+#filter-cat:checked ~ main .show-cat,
+#filter-bird:checked ~ main .show-bird,
+#filter-fish:checked ~ main .show-fish,
+#filter-small-pet:checked ~ main .show-small-pet{
+  display: inline;
+}
+
+/* โชว์กาดสัตว์ */
+
+#filter-all:checked ~ main .pet-card {
+  display: block;
+}
+
+#filter-dog:checked ~ main .pet-card,
+#filter-cat:checked ~ main .pet-card,
+#filter-bird:checked ~ main .pet-card,
+#filter-fish:checked ~ main .pet-card,
+#filter-small-pet:checked ~ main .pet-card {
+  display: none;
+}
+
+#filter-dog:checked ~ main .pet-card.show-dog,
+#filter-cat:checked ~ main .pet-card.show-cat,
+#filter-bird:checked ~ main .pet-card.show-bird,
+#filter-fish:checked ~ main .pet-card.show-fish,
+#filter-small-pet:checked ~ main .pet-card.show-small-pet {
+  display: block;
+}
+
+/* ซ่อนกาดสัตว์ */
+
+nav a.active {
+  background-color: var(--btn-bg-color);
+  color: var(--text-white);
+}
+
+/* =========================
+            Main
+============================*/
+.page-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 25px;
+}
+
+.pet-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.pet-card img {
+  height: 16.25rem;
+  width: 100%;
+
+  object-fit: cover;
+}
+
+.pet-card {
+  border: 1px solid var(--border-color);
+  box-shadow: var(--header-shadow);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition:
+    0.3s,
+    box-shadow 0.5;
+}
+
+.pet-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--card-shadow);
+}
+
+.pet-content {
+  padding: 1.25rem;
+}
+
+.pet-content p {
+  direction: none;
+}
+
+.pet-content h2 {
+  color: var(--primary-color);
+}
+
+.breed {
+  color: var(--text-color-p);
+}
+
+/* =========================
+        Information
+============================*/
+.info-section {
+  margin-top: 3rem;
+}
+
+.info-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.info-card {
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  box-shadow: var(--header-shadow);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.info-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--card-shadow);
+}
+
+.info-card i {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.info-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.info-blue {
+  background-color: #dceeff;
+  color: #174c7e;
+}
+
+.info-purple {
+  background-color: #eee2ff;
+  color: #62358c;
+}
+
+.info-green {
+  background-color: #dff4e8;
+  color: #286442;
+}
+
+.info-orange {
+  background-color: #ffe8d5;
+  color: #8b4a18;
+}
+
+/* =========================
+            Form-Radio
+============================*/
+
+.form-radio {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: var(--header-shadow);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+    background-color: var(--text-white);
+}
+
+.form-radio h2{
+    text-align: center;
+    color: var(--text-cyn);
+}
+.form-radio p{
+    text-align: center;
+    color: var(--text-color-p);
+    margin-bottom: 0.8rem;
+}
+
+.form-radio fieldset{
+  padding: 1.5rem;
+  border: 1px solid var(--border-f);
+  border-radius: 0.7rem;
+}
+
+.form-radio legend{
+  padding: 0 0.5rem;
+  font-weight: bold;
+  color: var(--text-bluecyn);
+}
+
+.radio-option{
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.radio-item label{
+  background-color: var(--mute-text);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: var(--text-button);
+}
+.radio-item input {
+  accent-color: var(--secondary-color);
+}
+
+.radio-item input:checked + label{
+  background-color: var(--secondary-color);
+  color: var(--text-button);
+}
+.reset-btn {
+  background-color: var(--border-reset);
+  color: var(--text-white);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: none;
+  margin: 1.5rem auto 0;
+  display: block;
+}
+
+/* =========================
+            Footer
+============================*/
+footer {
+  background-color: var(--footer-bg-color);
+  color: var(--text-white);
+
+  align-items: center;
+  padding-block: 2rem;
+
+  margin-top: 2rem;
+}
+footer p {
+  text-align: center;
+}
+
+@media (max-width: 1350px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 900px) {
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .pet-grid,
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+            Resto
+============================*/
